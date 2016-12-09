@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import BalanceVectorGraphics
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,7 +16,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        if let headerView = InstitutionHeaders.headerViewForId(sourceInstitutionId: "chase") {
+            headerView.frame.origin.y = 10
+            self.window!.contentView!.addSubview(headerView)
+        }
+        
+        if let headerView = InstitutionHeaders.headerViewForId(sourceInstitutionId: "bofa") {
+            headerView.frame.origin.y = 300
+            self.window!.contentView!.addSubview(headerView)
+        }
+        
+        if let headerView = InstitutionHeaders.defaultHeaderView(backgroundColor: NSColor.red, foregroundColor: NSColor.white, font: NSFont.systemFont(ofSize: 11, weight: NSFontWeightMedium), name: "Simple") {
+            headerView.frame.origin.y = 100
+            self.window!.contentView!.addSubview(headerView)
+        }
+        
+        if let headerView = InstitutionHeaders.defaultHeaderView(backgroundColor: NSColor(deviceRed: 0.243, green: 0.278, blue: 0.298, alpha: 1), foregroundColor: NSColor.white, font: NSFont.systemFont(ofSize: 11, weight: NSFontWeightSemibold), name: "Bank of America With A Really Really Long Name That Should Clip Because I Made It Way Too Long") {
+            headerView.frame.origin.y = 200
+            self.window!.contentView!.addSubview(headerView)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
