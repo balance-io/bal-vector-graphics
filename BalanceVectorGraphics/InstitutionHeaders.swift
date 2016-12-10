@@ -8,55 +8,52 @@
 
 import Cocoa
 
-public typealias DrawingFunction = (_ frame: NSRect) -> ()
-public typealias ColorDrawingFunction = (_ frame: NSRect, _ backgroundColor: NSColor, _ foregroundColor: NSColor, _ font: NSFont, _ name: String) -> ()
+// Only need to create entries for primary institutions, the rest are looked up in the db
+fileprivate let lookupTable: [String: DrawingFunction] =
+    ["ins_100012":  InstitutionHeaderBars.drawAllyFinancial,
+     "amex":        InstitutionHeaderBars.drawAmex,
+     "bofa":        InstitutionHeaderBars.drawBankOfAmerica,
+     "ins_109136":  InstitutionHeaderBars.drawBankOfTheWest,
+     "ins_100009":  InstitutionHeaderBars.drawBarclaycard,
+     "bbt":         InstitutionHeaderBars.drawBbt,
+     "ins_109176":  InstitutionHeaderBars.drawBbvaCompass,
+     "capone360":   InstitutionHeaderBars.drawCapitalOne,
+     "ins_107220":  InstitutionHeaderBars.drawCharlesSchwab,
+     "chase":       InstitutionHeaderBars.drawChase,
+     "citi":        InstitutionHeaderBars.drawCitiBank,
+     "ins_100047":  InstitutionHeaderBars.drawCitizensBank,
+     "ins_100003":  InstitutionHeaderBars.drawDiscover,
+     "ins_100096":  InstitutionHeaderBars.drawEtrade,
+     "ins_100048":  InstitutionHeaderBars.drawFidelity,
+     "ins_100023":  InstitutionHeaderBars.drawFifthThirdBank,
+     "ins_100008":  InstitutionHeaderBars.drawHuntingtonBank,
+     "ins_104022":  InstitutionHeaderBars.drawHsbc,
+     "ins_100053":  InstitutionHeaderBars.drawKeyBank,
+     "ins_100013":  InstitutionHeaderBars.drawMtBank,
+     "nfcu":        InstitutionHeaderBars.drawNavyFederalCreditUnion,
+     "ins_100020":  InstitutionHeaderBars.drawPaypal,
+     "pnc":         InstitutionHeaderBars.drawPnc,
+     "ins_107233":  InstitutionHeaderBars.drawScottrade,
+     "ins_107401":  InstitutionHeaderBars.drawSiliconValleyBank,
+     "ins_100007":  InstitutionHeaderBars.drawSimple,
+     "suntrust":    InstitutionHeaderBars.drawSuntrust,
+     "ins_109188":  InstitutionHeaderBars.drawTarget,
+     "td":          InstitutionHeaderBars.drawTdBank,
+     "ins_100000":  InstitutionHeaderBars.drawUnionBank,
+     "usaa":        InstitutionHeaderBars.drawUsaa,
+     "us":          InstitutionHeaderBars.drawUsBank,
+     "ins_108768":  InstitutionHeaderBars.drawVanguard,
+     "wells":       InstitutionHeaderBars.drawWellsFargo,
+     "ins_100049":  InstitutionHeaderBars.drawWoodforestBank,
+     
+     // Seem to be no longer supported
+        "31575":       InstitutionHeaderBars.drawDigit,
+        "3148":        InstitutionHeaderBars.drawNavient,
+        "272":         InstitutionHeaderBars.drawRegionsBank, // Possibly has an option
+        "30671":       InstitutionHeaderBars.drawVenmo,
+]
 
 public struct InstitutionHeaders {
-    // Only need to create entries for primary institutions, the rest are looked up in the db
-    fileprivate static let lookupTable: [String: DrawingFunction] =
-        ["ins_100012":  InstitutionHeaderBars.drawAllyFinancial,
-         "amex":        InstitutionHeaderBars.drawAmex,
-         "bofa":        InstitutionHeaderBars.drawBankOfAmerica,
-         "ins_109136":  InstitutionHeaderBars.drawBankOfTheWest,
-         "ins_100009":  InstitutionHeaderBars.drawBarclaycard,
-         "bbt":         InstitutionHeaderBars.drawBbt,
-         "ins_109176":  InstitutionHeaderBars.drawBbvaCompass,
-         "capone360":   InstitutionHeaderBars.drawCapitalOne,
-         "ins_107220":  InstitutionHeaderBars.drawCharlesSchwab,
-         "chase":       InstitutionHeaderBars.drawChase,
-         "citi":        InstitutionHeaderBars.drawCitiBank,
-         "ins_100047":  InstitutionHeaderBars.drawCitizensBank,
-         "ins_100003":  InstitutionHeaderBars.drawDiscover,
-         "ins_100096":  InstitutionHeaderBars.drawEtrade,
-         "ins_100048":  InstitutionHeaderBars.drawFidelity,
-         "ins_100023":  InstitutionHeaderBars.drawFifthThirdBank,
-         "ins_100008":  InstitutionHeaderBars.drawHuntingtonBank,
-         "ins_104022":  InstitutionHeaderBars.drawHsbc,
-         "ins_100053":  InstitutionHeaderBars.drawKeyBank,
-         "ins_100013":  InstitutionHeaderBars.drawMtBank,
-         "nfcu":        InstitutionHeaderBars.drawNavyFederalCreditUnion,
-         "ins_100020":  InstitutionHeaderBars.drawPaypal,
-         "pnc":         InstitutionHeaderBars.drawPnc,
-         "ins_107233":  InstitutionHeaderBars.drawScottrade,
-         "ins_107401":  InstitutionHeaderBars.drawSiliconValleyBank,
-         "ins_100007":  InstitutionHeaderBars.drawSimple,
-         "suntrust":    InstitutionHeaderBars.drawSuntrust,
-         "ins_109188":  InstitutionHeaderBars.drawTarget,
-         "td":          InstitutionHeaderBars.drawTdBank,
-         "ins_100000":  InstitutionHeaderBars.drawUnionBank,
-         "usaa":        InstitutionHeaderBars.drawUsaa,
-         "us":          InstitutionHeaderBars.drawUsBank,
-         "ins_108768":  InstitutionHeaderBars.drawVanguard,
-         "wells":       InstitutionHeaderBars.drawWellsFargo,
-         "ins_100049":  InstitutionHeaderBars.drawWoodforestBank,
-         
-         // Seem to be no longer supported
-         "31575":       InstitutionHeaderBars.drawDigit,
-         "3148":        InstitutionHeaderBars.drawNavient,
-         "272":         InstitutionHeaderBars.drawRegionsBank, // Possibly has an option
-         "30671":       InstitutionHeaderBars.drawVenmo,
-    ]
-    
     public static func headerViewForId(sourceInstitutionId: String) -> NSView? {
         if let drawingFunction = lookupTable[sourceInstitutionId] {
             return HeaderView(drawingFunction: drawingFunction)
@@ -71,7 +68,9 @@ public struct InstitutionHeaders {
     }
 }
 
-private class HeaderView: NSView {
+fileprivate typealias ColorDrawingFunction = (_ frame: NSRect, _ backgroundColor: NSColor, _ foregroundColor: NSColor, _ font: NSFont, _ name: String) -> ()
+
+fileprivate class HeaderView: NSView {
     fileprivate var drawingFunction: DrawingFunction?
     
     fileprivate var colorDrawingFunction: ColorDrawingFunction?

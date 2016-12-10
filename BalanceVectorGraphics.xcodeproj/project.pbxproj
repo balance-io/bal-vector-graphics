@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53560E5A1DFCAB3600547AF7 /* TouchBarAccountButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */; };
+		53560E5C1DFCAB5B00547AF7 /* TouchBarAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */; };
+		53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
 		53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783271DFA2AE30032C6AA /* AppDelegate.swift */; };
 		53C7832A1DFA2AE30032C6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C783291DFA2AE30032C6AA /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarAccountButtons.swift; sourceTree = "<group>"; };
+		53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarAccounts.swift; sourceTree = "<group>"; };
+		53560E611DFCAF3000547AF7 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVectorGraphics.h; sourceTree = "<group>"; };
 		53C7831A1DFA2AA60032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 		53C783181DFA2AA60032C6AA /* BalanceVectorGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				53560E611DFCAF3000547AF7 /* TypeAliases.swift */,
 				53C783321DFA2B400032C6AA /* InstitutionHeaders */,
 				53C783491DFA2BE30032C6AA /* PaintCode */,
 				53C7834A1DFA2BF40032C6AA /* QuartzCode */,
@@ -142,6 +149,8 @@
 				53C7833F1DFA2BDA0032C6AA /* AccountConnectionErrors.swift */,
 				53C783401DFA2BDA0032C6AA /* BillingButtons.swift */,
 				53C783411DFA2BDA0032C6AA /* InstitutionButtons.swift */,
+				53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */,
+				53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */,
 				53C783421DFA2BDA0032C6AA /* NSFont.swift */,
 			);
 			name = PaintCode;
@@ -273,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C783471DFA2BDA0032C6AA /* NSFont.swift in Sources */,
+				53560E5A1DFCAB3600547AF7 /* TouchBarAccountButtons.swift in Sources */,
+				53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */,
 				53C7833C1DFA2BCE0032C6AA /* InstitutionDefaultBar.swift in Sources */,
 				53C7833E1DFA2BCE0032C6AA /* InstitutionHeaders.swift in Sources */,
 				53C783461DFA2BDA0032C6AA /* InstitutionButtons.swift in Sources */,
@@ -280,6 +291,7 @@
 				53C783451DFA2BDA0032C6AA /* BillingButtons.swift in Sources */,
 				53C783481DFA2BDA0032C6AA /* QCMethod.swift in Sources */,
 				53C7833D1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift in Sources */,
+				53560E5C1DFCAB5B00547AF7 /* TouchBarAccounts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
