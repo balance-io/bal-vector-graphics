@@ -14,14 +14,15 @@ public class SyncCircle: NSView, CAAnimationDelegate {
 	var completionBlocks : Dictionary<CAAnimation, (Bool) -> Void> = [:]
 	var updateLayerValueForCompletedAnimation : Bool = true
 	
-    public var syncCircleColor : NSColor! {
-        didSet {
-            resetLayerProperties(forLayerIdentifiers: nil)
-            self.needsDisplay = true
-        }
-    }
+    var syncCircleColor : NSColor!
 	
 	//MARK: - Life Cycle
+    
+    public init(syncCircleColor: NSColor) {
+        super.init(frame: NSZeroRect)
+        self.syncCircleColor = syncCircleColor
+        setupLayers()
+    }
 	
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
