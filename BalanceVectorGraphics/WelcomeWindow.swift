@@ -24,8 +24,8 @@ public class WelcomeWindow : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let subscribeButtonColor = NSColor(calibratedRed: 0.102, green: 0.655, blue: 1, alpha: 1)
-        let subscribeButtonPressedColor = NSColor(calibratedRed: 0, green: 0.529, blue: 0.859, alpha: 1)
+        let subscribeButtonColor = NSColor(deviceRed: 0.102, green: 0.655, blue: 1, alpha: 1)
+        let subscribeButtonPressedColor = NSColor(deviceRed: 0, green: 0.529, blue: 0.859, alpha: 1)
 
         if (original) {
             //// background Drawing
@@ -47,7 +47,7 @@ public class WelcomeWindow : NSObject {
         let textRect = NSRect(x: frame.minX + fastFloor((frame.width - 10) * 0.03817 + 0.5), y: frame.minY + fastFloor((frame.height - 10.5) * 0.35211) + 0.5, width: frame.width - 10 - fastFloor((frame.width - 10) * 0.03817 + 0.5), height: frame.height - 11 - fastFloor((frame.height - 10.5) * 0.35211))
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
-        let textFontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 15), NSForegroundColorAttributeName: NSColor.white, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 15), NSForegroundColorAttributeName: NSColor.white, NSParagraphStyleAttributeName: textStyle]
 
         let textTextHeight: CGFloat = subscribeButtonString.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
         let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
@@ -64,8 +64,8 @@ public class WelcomeWindow : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let firstLinkColor = NSColor(calibratedRed: 0.369, green: 0.475, blue: 1, alpha: 1)
-        let firstLinkColorPressed = NSColor(calibratedRed: 0.294, green: 0.38, blue: 0.8, alpha: 1)
+        let firstLinkColor = NSColor(deviceRed: 0.369, green: 0.475, blue: 1, alpha: 1)
+        let firstLinkColorPressed = NSColor(deviceRed: 0.294, green: 0.38, blue: 0.8, alpha: 1)
 
 
         //// Subframes
@@ -112,7 +112,7 @@ public class WelcomeWindow : NSObject {
             let textRect = NSRect(x: linkOriginal.minX + fastFloor(linkOriginal.width * 0.12132 + 0.5), y: linkOriginal.minY + fastFloor(linkOriginal.height * 0.13462) + 0.5, width: fastFloor(linkOriginal.width * 1.00000 + 0.5) - fastFloor(linkOriginal.width * 0.12132 + 0.5), height: fastFloor(linkOriginal.height * 0.94231) - fastFloor(linkOriginal.height * 0.13462))
             let textStyle = NSMutableParagraphStyle()
             textStyle.alignment = .left
-            let textFontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: firstLinkColor, NSParagraphStyleAttributeName: textStyle]
+            let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 14), NSForegroundColorAttributeName: firstLinkColor, NSParagraphStyleAttributeName: textStyle]
 
             let textTextHeight: CGFloat = contactLinkString.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
             let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
@@ -164,7 +164,7 @@ public class WelcomeWindow : NSObject {
             let text2Rect = NSRect(x: linkPressed.minX + fastFloor(linkPressed.width * 0.12132 + 0.5), y: linkPressed.minY + fastFloor(linkPressed.height * 0.13462) + 0.5, width: fastFloor(linkPressed.width * 1.00000 + 0.5) - fastFloor(linkPressed.width * 0.12132 + 0.5), height: fastFloor(linkPressed.height * 0.94231) - fastFloor(linkPressed.height * 0.13462))
             let text2Style = NSMutableParagraphStyle()
             text2Style.alignment = .left
-            let text2FontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: firstLinkColorPressed, NSParagraphStyleAttributeName: text2Style]
+            let text2FontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 14), NSForegroundColorAttributeName: firstLinkColorPressed, NSParagraphStyleAttributeName: text2Style]
 
             let text2TextHeight: CGFloat = contactLinkString.boundingRect(with: NSSize(width: text2Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text2FontAttributes).height
             let text2TextRect: NSRect = NSRect(x: text2Rect.minX, y: text2Rect.minY + (text2Rect.height - text2TextHeight) / 2, width: text2Rect.width, height: text2TextHeight)
@@ -184,8 +184,8 @@ public class WelcomeWindow : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let secondLinkColor = NSColor(calibratedRed: 0.325, green: 0.627, blue: 0.929, alpha: 1)
-        let secondLinkColorPressed = NSColor(calibratedRed: 0.256, green: 0.493, blue: 0.73, alpha: 1)
+        let secondLinkColor = NSColor(deviceRed: 0.325, green: 0.627, blue: 0.929, alpha: 1)
+        let secondLinkColorPressed = NSColor(deviceRed: 0.256, green: 0.493, blue: 0.73, alpha: 1)
 
 
         //// Subframes
@@ -236,7 +236,7 @@ public class WelcomeWindow : NSObject {
             let textRect = NSRect(x: linkOriginal.minX + fastFloor(linkOriginal.width * 0.12132 + 0.5), y: linkOriginal.minY + fastFloor(linkOriginal.height * 0.13462) + 0.5, width: fastFloor(linkOriginal.width * 1.00000 + 0.5) - fastFloor(linkOriginal.width * 0.12132 + 0.5), height: fastFloor(linkOriginal.height * 0.94231) - fastFloor(linkOriginal.height * 0.13462))
             let textStyle = NSMutableParagraphStyle()
             textStyle.alignment = .left
-            let textFontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: secondLinkColor, NSParagraphStyleAttributeName: textStyle]
+            let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 14), NSForegroundColorAttributeName: secondLinkColor, NSParagraphStyleAttributeName: textStyle]
 
             let textTextHeight: CGFloat = pricingLinkString.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
             let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
@@ -292,7 +292,7 @@ public class WelcomeWindow : NSObject {
             let text2Rect = NSRect(x: linkPressed.minX + fastFloor(linkPressed.width * 0.12132 + 0.5), y: linkPressed.minY + fastFloor(linkPressed.height * 0.13462) + 0.5, width: fastFloor(linkPressed.width * 1.00000 + 0.5) - fastFloor(linkPressed.width * 0.12132 + 0.5), height: fastFloor(linkPressed.height * 0.94231) - fastFloor(linkPressed.height * 0.13462))
             let text2Style = NSMutableParagraphStyle()
             text2Style.alignment = .left
-            let text2FontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: secondLinkColorPressed, NSParagraphStyleAttributeName: text2Style]
+            let text2FontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 14), NSForegroundColorAttributeName: secondLinkColorPressed, NSParagraphStyleAttributeName: text2Style]
 
             let text2TextHeight: CGFloat = pricingLinkString.boundingRect(with: NSSize(width: text2Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text2FontAttributes).height
             let text2TextRect: NSRect = NSRect(x: text2Rect.minX, y: text2Rect.minY + (text2Rect.height - text2TextHeight) / 2, width: text2Rect.width, height: text2TextHeight)
@@ -312,8 +312,8 @@ public class WelcomeWindow : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let thirdLinkColor = NSColor(calibratedRed: 0.325, green: 0.78, blue: 0.925, alpha: 1)
-        let thirdLinkColorPressed = NSColor(calibratedRed: 0.257, green: 0.616, blue: 0.73, alpha: 1)
+        let thirdLinkColor = NSColor(deviceRed: 0.325, green: 0.78, blue: 0.925, alpha: 1)
+        let thirdLinkColorPressed = NSColor(deviceRed: 0.257, green: 0.616, blue: 0.73, alpha: 1)
 
 
         //// Subframes
@@ -359,7 +359,7 @@ public class WelcomeWindow : NSObject {
             let textRect = NSRect(x: linkOriginal.minX + fastFloor(linkOriginal.width * 0.12132 + 0.5), y: linkOriginal.minY + fastFloor(linkOriginal.height * 0.13462) + 0.5, width: fastFloor(linkOriginal.width * 1.00000 + 0.5) - fastFloor(linkOriginal.width * 0.12132 + 0.5), height: fastFloor(linkOriginal.height * 0.94231) - fastFloor(linkOriginal.height * 0.13462))
             let textStyle = NSMutableParagraphStyle()
             textStyle.alignment = .left
-            let textFontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: thirdLinkColor, NSParagraphStyleAttributeName: textStyle]
+            let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 14), NSForegroundColorAttributeName: thirdLinkColor, NSParagraphStyleAttributeName: textStyle]
 
             let textTextHeight: CGFloat = learnMoreLinkString.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
             let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
@@ -410,7 +410,7 @@ public class WelcomeWindow : NSObject {
             let text2Rect = NSRect(x: linkPressed.minX + fastFloor(linkPressed.width * 0.12132 + 0.5), y: linkPressed.minY + fastFloor(linkPressed.height * 0.13462) + 0.5, width: fastFloor(linkPressed.width * 1.00000 + 0.5) - fastFloor(linkPressed.width * 0.12132 + 0.5), height: fastFloor(linkPressed.height * 0.94231) - fastFloor(linkPressed.height * 0.13462))
             let text2Style = NSMutableParagraphStyle()
             text2Style.alignment = .left
-            let text2FontAttributes = [NSFontAttributeName: NSFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: thirdLinkColorPressed, NSParagraphStyleAttributeName: text2Style]
+            let text2FontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 14), NSForegroundColorAttributeName: thirdLinkColorPressed, NSParagraphStyleAttributeName: text2Style]
 
             let text2TextHeight: CGFloat = learnMoreLinkString.boundingRect(with: NSSize(width: text2Rect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: text2FontAttributes).height
             let text2TextRect: NSRect = NSRect(x: text2Rect.minX, y: text2Rect.minY + (text2Rect.height - text2TextHeight) / 2, width: text2Rect.width, height: text2TextHeight)

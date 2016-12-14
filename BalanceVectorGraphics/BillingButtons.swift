@@ -21,7 +21,7 @@ open class BillingButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let button = NSColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.26)
+        let button = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.26)
         let buttonTextColor = buttonTextColor
 
         //// Shadow Declarations
@@ -81,7 +81,7 @@ open class BillingButtons : NSObject {
 
         //// Color Declarations
         let buttonTextColor = buttonTextColor
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
 
         //// Shadow Declarations
         let upgradeButtonShadow = NSShadow()
@@ -144,10 +144,10 @@ open class BillingButtons : NSObject {
 
         //// Color Declarations
         let buttonTextColor = buttonTextColor
-        let downgradeButtonShadowColor = NSColor(calibratedRed: 0, green: 0, blue: 0, alpha: 1)
-        let downgradeBackground = NSColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.24)
-        let downgradePressedBackground = NSColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.36)
-        let downgradeButtonInnerStroke = NSColor(calibratedRed: 0, green: 0, blue: 0, alpha: 0.04)
+        let downgradeButtonShadowColor = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
+        let downgradeBackground = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.24)
+        let downgradePressedBackground = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.36)
+        let downgradeButtonInnerStroke = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.04)
 
         //// Shadow Declarations
         let downgradeButtonShadow = NSShadow()

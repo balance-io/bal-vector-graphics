@@ -22,9 +22,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let amexBackground = NSColor(calibratedRed: 0, green: 0.502, blue: 0.847, alpha: 1)
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let amexBackground = NSColor(deviceRed: 0, green: 0.502, blue: 0.847, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -143,9 +143,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let chaseBackground = NSColor(calibratedRed: 0, green: 0.357, blue: 0.725, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let chaseBackground = NSColor(deviceRed: 0, green: 0.357, blue: 0.725, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -296,12 +296,12 @@ public class TouchBarAccountButtons : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let discoverLogoColor = NSColor(calibratedRed: 0.941, green: 0.949, blue: 0.961, alpha: 1)
-        let discoverLogoBackgroundGradientColor = NSColor(calibratedRed: 0.976, green: 0.627, blue: 0.125, alpha: 1)
-        let discoverLogoBackgroundGradientColor2 = NSColor(calibratedRed: 0.965, green: 0.533, blue: 0.125, alpha: 1)
-        let discoverLogoBackgroundGradientColor3 = NSColor(calibratedRed: 0.957, green: 0.459, blue: 0.129, alpha: 1)
-        let discoverBackground = NSColor(calibratedRed: 0.176, green: 0.176, blue: 0.18, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let discoverLogoColor = NSColor(deviceRed: 0.941, green: 0.949, blue: 0.961, alpha: 1)
+        let discoverLogoBackgroundGradientColor = NSColor(deviceRed: 0.976, green: 0.627, blue: 0.125, alpha: 1)
+        let discoverLogoBackgroundGradientColor2 = NSColor(deviceRed: 0.965, green: 0.533, blue: 0.125, alpha: 1)
+        let discoverLogoBackgroundGradientColor3 = NSColor(deviceRed: 0.957, green: 0.459, blue: 0.129, alpha: 1)
+        let discoverBackground = NSColor(deviceRed: 0.176, green: 0.176, blue: 0.18, alpha: 1)
 
         //// Gradient Declarations
         let discoverLogoBackgroundGradient = NSGradient(colors: [discoverLogoBackgroundGradientColor, discoverLogoBackgroundGradientColor2, discoverLogoBackgroundGradientColor3], atLocations: [0.0, 0.60, 1.0], colorSpace: NSColorSpace.genericRGB)!
@@ -457,9 +457,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let capitalOneBackground = NSColor(calibratedRed: 0.792, green: 0.18, blue: 0.18, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let capitalOneBackground = NSColor(deviceRed: 0.792, green: 0.18, blue: 0.18, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -669,9 +669,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let mtBankBackground = NSColor(calibratedRed: 0.059, green: 0.49, blue: 0.325, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let mtBankBackground = NSColor(deviceRed: 0.059, green: 0.49, blue: 0.325, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -902,10 +902,10 @@ public class TouchBarAccountButtons : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let citiBankBackground = NSColor(calibratedRed: 0, green: 0.231, blue: 0.439, alpha: 1)
-        let citiBankLogoBackground = NSColor(calibratedRed: 0.851, green: 0.149, blue: 0.11, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let citiBankBackground = NSColor(deviceRed: 0, green: 0.231, blue: 0.439, alpha: 1)
+        let citiBankLogoBackground = NSColor(deviceRed: 0.851, green: 0.149, blue: 0.11, alpha: 1)
 
 
         //// Subframes
@@ -1025,9 +1025,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let hsbcLogoBackground = NSColor(calibratedRed: 0.906, green: 0.114, blue: 0.11, alpha: 1)
-        let whiteBackground = NSColor(calibratedRed: 0.961, green: 0.969, blue: 0.98, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let hsbcLogoBackground = NSColor(deviceRed: 0.906, green: 0.114, blue: 0.11, alpha: 1)
+        let whiteBackground = NSColor(deviceRed: 0.961, green: 0.969, blue: 0.98, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -1089,9 +1089,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let bankOfAmericaBackground = NSColor(calibratedRed: 0.902, green: 0.063, blue: 0.192, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let bankOfAmericaBackground = NSColor(deviceRed: 0.902, green: 0.063, blue: 0.192, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -1168,9 +1168,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let wellsFargoBackground = NSColor(calibratedRed: 0.804, green: 0.075, blue: 0.039, alpha: 1)
-        let wellsFargoLogoBackground = NSColor(calibratedRed: 1, green: 1, blue: 0, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let wellsFargoBackground = NSColor(deviceRed: 0.804, green: 0.075, blue: 0.039, alpha: 1)
+        let wellsFargoLogoBackground = NSColor(deviceRed: 1, green: 1, blue: 0, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -1270,9 +1270,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let usaaBackground = NSColor(calibratedRed: 0.063, green: 0.161, blue: 0.255, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let usaaBackground = NSColor(deviceRed: 0.063, green: 0.161, blue: 0.255, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -1466,10 +1466,10 @@ public class TouchBarAccountButtons : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let usBankLogoBackground = NSColor(calibratedRed: 0.824, green: 0.169, blue: 0.271, alpha: 1)
-        let usBankBackground = NSColor(calibratedRed: 0.039, green: 0.11, blue: 0.463, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let usBankLogoBackground = NSColor(deviceRed: 0.824, green: 0.169, blue: 0.271, alpha: 1)
+        let usBankBackground = NSColor(deviceRed: 0.039, green: 0.11, blue: 0.463, alpha: 1)
 
 
         //// Subframes
@@ -1570,9 +1570,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let pncBackground = NSColor(calibratedRed: 1, green: 0.459, blue: 0, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let pncBackground = NSColor(deviceRed: 1, green: 0.459, blue: 0, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -1694,11 +1694,11 @@ public class TouchBarAccountButtons : NSObject {
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let etradeLogoBackground = NSColor(calibratedRed: 0.388, green: 0.306, blue: 0.627, alpha: 1)
-        let etradeLogoBackground2 = NSColor(calibratedRed: 0.6, green: 0.792, blue: 0.235, alpha: 1)
-        let etradeBackground = NSColor(calibratedRed: 0.188, green: 0.255, blue: 0.357, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let etradeLogoBackground = NSColor(deviceRed: 0.388, green: 0.306, blue: 0.627, alpha: 1)
+        let etradeLogoBackground2 = NSColor(deviceRed: 0.6, green: 0.792, blue: 0.235, alpha: 1)
+        let etradeBackground = NSColor(deviceRed: 0.188, green: 0.255, blue: 0.357, alpha: 1)
 
 
         //// Subframes
@@ -1877,9 +1877,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let scottradeBackground = NSColor(calibratedRed: 0.341, green: 0.145, blue: 0.482, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let scottradeBackground = NSColor(deviceRed: 0.341, green: 0.145, blue: 0.482, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -2123,9 +2123,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let tdBankBackground = NSColor(calibratedRed: 0, green: 0.729, blue: 0.184, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let tdBankBackground = NSColor(deviceRed: 0, green: 0.729, blue: 0.184, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -2191,9 +2191,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let fidelityBackground = NSColor(calibratedRed: 0.271, green: 0.584, blue: 0.118, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let fidelityBackground = NSColor(deviceRed: 0.271, green: 0.584, blue: 0.118, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -2347,9 +2347,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let paypalBackground = NSColor(calibratedRed: 0.012, green: 0.271, blue: 0.486, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let paypalBackground = NSColor(deviceRed: 0.012, green: 0.271, blue: 0.486, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -2522,9 +2522,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let venmoBackground = NSColor(calibratedRed: 0.239, green: 0.584, blue: 0.808, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let venmoBackground = NSColor(deviceRed: 0.239, green: 0.584, blue: 0.808, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -2643,9 +2643,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let simpleBackground = NSColor(calibratedRed: 0, green: 0.58, blue: 1, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let simpleBackground = NSColor(deviceRed: 0, green: 0.58, blue: 1, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -3142,9 +3142,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let digitBackground = NSColor(calibratedRed: 0.314, green: 0.812, blue: 0.635, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let digitBackground = NSColor(deviceRed: 0.314, green: 0.812, blue: 0.635, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -3312,9 +3312,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let targetBackground = NSColor(calibratedRed: 0.808, green: 0, blue: 0, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let targetBackground = NSColor(deviceRed: 0.808, green: 0, blue: 0, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -3373,9 +3373,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let suntrustBackground = NSColor(calibratedRed: 0, green: 0.224, blue: 0.451, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let suntrustBackground = NSColor(deviceRed: 0, green: 0.224, blue: 0.451, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -3593,9 +3593,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let bbtBackground = NSColor(calibratedRed: 0.541, green: 0, blue: 0.145, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let bbtBackground = NSColor(deviceRed: 0.541, green: 0, blue: 0.145, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -3748,9 +3748,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let barclaycardBackground = NSColor(calibratedRed: 0, green: 0.675, blue: 0.941, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let barclaycardBackground = NSColor(deviceRed: 0, green: 0.675, blue: 0.941, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -3973,9 +3973,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let citizensBankBackground = NSColor(calibratedRed: 0, green: 0.659, blue: 0.463, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let citizensBankBackground = NSColor(deviceRed: 0, green: 0.659, blue: 0.463, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -4203,9 +4203,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let bankOfTheWestBackground = NSColor(calibratedRed: 0.082, green: 0.22, blue: 0.412, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let bankOfTheWestBackground = NSColor(deviceRed: 0.082, green: 0.22, blue: 0.412, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -4397,9 +4397,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let regionsBankBackground = NSColor(calibratedRed: 0.325, green: 0.541, blue: 0.22, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let regionsBankBackground = NSColor(deviceRed: 0.325, green: 0.541, blue: 0.22, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -4588,9 +4588,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let allyFinancialBackground = NSColor(calibratedRed: 0.314, green: 0.063, blue: 0.29, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let allyFinancialBackground = NSColor(deviceRed: 0.314, green: 0.063, blue: 0.29, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -4710,9 +4710,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let navyFederalCreditUnionBackground = NSColor(calibratedRed: 0, green: 0.212, blue: 0.416, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let navyFederalCreditUnionBackground = NSColor(deviceRed: 0, green: 0.212, blue: 0.416, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -4799,9 +4799,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let unionBankBackground = NSColor(calibratedRed: 0.859, green: 0.122, blue: 0.149, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let unionBankBackground = NSColor(deviceRed: 0.859, green: 0.122, blue: 0.149, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -4906,9 +4906,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let vanguardBackground = NSColor(calibratedRed: 0.635, green: 0.039, blue: 0.208, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let vanguardBackground = NSColor(deviceRed: 0.635, green: 0.039, blue: 0.208, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -5121,9 +5121,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let huntingtonBankBackground = NSColor(calibratedRed: 0.388, green: 0.749, blue: 0.075, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let huntingtonBankBackground = NSColor(deviceRed: 0.388, green: 0.749, blue: 0.075, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -5364,9 +5364,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let siliconValleyBankBackground = NSColor(calibratedRed: 0, green: 0.631, blue: 0.89, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let siliconValleyBankBackground = NSColor(deviceRed: 0, green: 0.631, blue: 0.89, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -5468,9 +5468,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let keyBankBackground = NSColor(calibratedRed: 0.937, green: 0.243, blue: 0.2, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let keyBankBackground = NSColor(deviceRed: 0.937, green: 0.243, blue: 0.2, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -5586,9 +5586,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let navientBackground = NSColor(calibratedRed: 0.325, green: 0.078, blue: 0.439, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let navientBackground = NSColor(deviceRed: 0.325, green: 0.078, blue: 0.439, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -5728,9 +5728,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let bbvaBackground = NSColor(calibratedRed: 0, green: 0.325, blue: 0.608, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let bbvaBackground = NSColor(deviceRed: 0, green: 0.325, blue: 0.608, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -5835,9 +5835,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let woodforestBankBackground = NSColor(calibratedRed: 0.008, green: 0.416, blue: 0.259, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let woodforestBankBackground = NSColor(deviceRed: 0.008, green: 0.416, blue: 0.259, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
@@ -6182,9 +6182,9 @@ public class TouchBarAccountButtons : NSObject {
         let context = NSGraphicsContext.current()!.cgContext
 
         //// Color Declarations
-        let white = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 1)
-        let highlightColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.12)
-        let fifthThirdBankBackground = NSColor(calibratedRed: 0.086, green: 0.271, blue: 0.592, alpha: 1)
+        let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
+        let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
+        let fifthThirdBankBackground = NSColor(deviceRed: 0.086, green: 0.271, blue: 0.592, alpha: 1)
 
         //// background
         NSGraphicsContext.saveGraphicsState()
