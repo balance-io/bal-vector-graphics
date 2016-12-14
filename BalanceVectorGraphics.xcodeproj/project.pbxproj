@@ -11,6 +11,12 @@
 		53560E5C1DFCAB5B00547AF7 /* TouchBarAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */; };
 		53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
 		53560E811DFCE0F600547AF7 /* ResizingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E801DFCE0F600547AF7 /* ResizingBehavior.swift */; };
+		536F8B761E01079400A3B718 /* AccountsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B721E01079400A3B718 /* AccountsTabIcon.swift */; };
+		536F8B771E01079400A3B718 /* FeedTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B731E01079400A3B718 /* FeedTabIcon.swift */; };
+		536F8B781E01079400A3B718 /* InsightsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B741E01079400A3B718 /* InsightsTabIcon.swift */; };
+		536F8B791E01079400A3B718 /* TransactionsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */; };
+		536F8B7B1E0107A500A3B718 /* SyncCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B7A1E0107A500A3B718 /* SyncCircle.swift */; };
+		536F8B7D1E01088100A3B718 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B7C1E01088100A3B718 /* TabIcon.swift */; };
 		53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783271DFA2AE30032C6AA /* AppDelegate.swift */; };
 		53C7832A1DFA2AE30032C6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C783291DFA2AE30032C6AA /* Assets.xcassets */; };
@@ -57,6 +63,12 @@
 		53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarAccounts.swift; sourceTree = "<group>"; };
 		53560E611DFCAF3000547AF7 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		53560E801DFCE0F600547AF7 /* ResizingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizingBehavior.swift; sourceTree = "<group>"; };
+		536F8B721E01079400A3B718 /* AccountsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTabIcon.swift; sourceTree = "<group>"; };
+		536F8B731E01079400A3B718 /* FeedTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabIcon.swift; sourceTree = "<group>"; };
+		536F8B741E01079400A3B718 /* InsightsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsTabIcon.swift; sourceTree = "<group>"; };
+		536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTabIcon.swift; sourceTree = "<group>"; };
+		536F8B7A1E0107A500A3B718 /* SyncCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncCircle.swift; sourceTree = "<group>"; };
+		536F8B7C1E01088100A3B718 /* TabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
 		53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVectorGraphics.h; sourceTree = "<group>"; };
 		53C7831A1DFA2AA60032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +115,18 @@
 			name = Internal;
 			sourceTree = "<group>";
 		};
+		536F8B711E01078900A3B718 /* Tab Icons */ = {
+			isa = PBXGroup;
+			children = (
+				536F8B7C1E01088100A3B718 /* TabIcon.swift */,
+				536F8B721E01079400A3B718 /* AccountsTabIcon.swift */,
+				536F8B731E01079400A3B718 /* FeedTabIcon.swift */,
+				536F8B741E01079400A3B718 /* InsightsTabIcon.swift */,
+				536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */,
+			);
+			name = "Tab Icons";
+			sourceTree = "<group>";
+		};
 		53C7830C1DFA2AA60032C6AA = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				53560E611DFCAF3000547AF7 /* TypeAliases.swift */,
+				536F8B711E01078900A3B718 /* Tab Icons */,
 				53C783321DFA2B400032C6AA /* InstitutionHeaders */,
 				53C783491DFA2BE30032C6AA /* PaintCode */,
 				53C7834A1DFA2BF40032C6AA /* QuartzCode */,
@@ -173,6 +198,7 @@
 		53C7834A1DFA2BF40032C6AA /* QuartzCode */ = {
 			isa = PBXGroup;
 			children = (
+				536F8B7A1E0107A500A3B718 /* SyncCircle.swift */,
 				53C783431DFA2BDA0032C6AA /* QCMethod.swift */,
 			);
 			name = QuartzCode;
@@ -297,12 +323,18 @@
 			files = (
 				53C783471DFA2BDA0032C6AA /* NSFont.swift in Sources */,
 				53560E5A1DFCAB3600547AF7 /* TouchBarAccountButtons.swift in Sources */,
+				536F8B761E01079400A3B718 /* AccountsTabIcon.swift in Sources */,
+				536F8B7D1E01088100A3B718 /* TabIcon.swift in Sources */,
+				536F8B771E01079400A3B718 /* FeedTabIcon.swift in Sources */,
 				53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */,
+				536F8B791E01079400A3B718 /* TransactionsTabIcon.swift in Sources */,
 				53C7833C1DFA2BCE0032C6AA /* InstitutionDefaultBar.swift in Sources */,
 				53560E811DFCE0F600547AF7 /* ResizingBehavior.swift in Sources */,
 				53C7833E1DFA2BCE0032C6AA /* InstitutionHeaders.swift in Sources */,
 				53C783461DFA2BDA0032C6AA /* InstitutionButtons.swift in Sources */,
+				536F8B781E01079400A3B718 /* InsightsTabIcon.swift in Sources */,
 				53C783441DFA2BDA0032C6AA /* AccountConnectionErrors.swift in Sources */,
+				536F8B7B1E0107A500A3B718 /* SyncCircle.swift in Sources */,
 				53C783451DFA2BDA0032C6AA /* BillingButtons.swift in Sources */,
 				53C783481DFA2BDA0032C6AA /* QCMethod.swift in Sources */,
 				53C7833D1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift in Sources */,
