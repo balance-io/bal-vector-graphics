@@ -1,33 +1,34 @@
 //
 //  FeedTabIcon.swift
 //
-//  Code generated using QuartzCode 1.53.0 on 12/11/16.
+//  Code generated using QuartzCode 1.53.0 on 12/14/16.
 //  www.quartzcodeapp.com
 //
 
 import Cocoa
 
 
-public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
+class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	var layers : Dictionary<String, AnyObject> = [:]
 	var completionBlocks : Dictionary<CAAnimation, (Bool) -> Void> = [:]
 	var updateLayerValueForCompletedAnimation : Bool = false
 	
-    public var notificationBubbleColor : NSColor!
-	public var tabIconColor : NSColor!
-	public var tabIconBorderColor : NSColor!
-	public var tabIconSelectedColor : NSColor!
+	var tabIconColor : NSColor!
+	var tabIconBorderColor : NSColor!
+	var tabIconSelectedColor : NSColor!
+	var bubbleColor : NSColor!
+	var bubbleSelectedColor : NSColor!
 	
 	//MARK: - Life Cycle
 	
-	public override init(frame: CGRect) {
+	override init(frame: CGRect) {
 		super.init(frame: frame)
 		setupProperties()
 		setupLayers()
 	}
 	
-	public required init?(coder aDecoder: NSCoder)
+	required init?(coder aDecoder: NSCoder)
 	{
 		super.init(coder: aDecoder)
 		setupProperties()
@@ -37,13 +38,14 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	
 	func setupProperties(){
-		self.notificationBubbleColor = NSColor(red:0, green: 0.62, blue:1, alpha:1)
 		self.tabIconColor = NSColor(red:0.443, green: 0.49, blue:0.541, alpha:1)
 		self.tabIconBorderColor = NSColor.black
 		self.tabIconSelectedColor = NSColor(red:0.0745, green: 0.0863, blue:0.098, alpha:1)
+		self.bubbleColor = NSColor(red:0.443, green: 0.49, blue:0.541, alpha:1)
+		self.bubbleSelectedColor = NSColor(red:0.0745, green: 0.0863, blue:0.098, alpha:1)
 	}
 	
-    func setupLayers(){
+	func setupLayers(){
 		self.wantsLayer = true
 		
 		self.layer!.backgroundColor = NSColor.black.cgColor
@@ -78,7 +80,7 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 		
 		let notificationsbubble = CAShapeLayer()
 		notificationsbubble.frame       = CGRect(x: 16, y: 13, width: 5, height: 5)
-		notificationsbubble.fillColor   = self.notificationBubbleColor.cgColor
+		notificationsbubble.fillColor   = self.bubbleColor.cgColor
 		notificationsbubble.strokeColor = NSColor.black.cgColor
 		notificationsbubble.lineWidth   = 0
 		notificationsbubble.path        = notificationsbubblePath().quartzPath
@@ -107,7 +109,7 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	//MARK: - Animation Setup
 	
-	public func addHighlightAnimation(reverseAnimation: Bool = false, completionBlock: ((_ finished: Bool) -> Void)? = nil){
+	func addHighlightAnimation(reverseAnimation: Bool = false, completionBlock: ((_ finished: Bool) -> Void)? = nil){
 		if completionBlock != nil{
 			let completionAnim = CABasicAnimation(keyPath:"completionAnim")
 			completionAnim.duration = 0.05
@@ -135,11 +137,23 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 		var pathHighlightAnim : CAAnimationGroup = QCMethod.group(animations: [pathFillColorAnim], fillMode:fillMode)
 		if (reverseAnimation){ pathHighlightAnim = QCMethod.reverseAnimation(anim: pathHighlightAnim, totalDuration:totalDuration) as! CAAnimationGroup}
 		layers["path"]?.add(pathHighlightAnim, forKey:"pathHighlightAnim")
+		
+		////Notificationsbubble animation
+		let notificationsbubbleFillColorAnim = CAKeyframeAnimation(keyPath:"fillColor")
+		notificationsbubbleFillColorAnim.values = [self.bubbleColor.cgColor, 
+			 self.bubbleSelectedColor.cgColor]
+		notificationsbubbleFillColorAnim.keyTimes = [0, 1]
+		notificationsbubbleFillColorAnim.duration = 0.05
+		notificationsbubbleFillColorAnim.timingFunction = CAMediaTimingFunction(controlPoints: 0.25, 0.1, 0.25, 1)
+		
+		var notificationsbubbleHighlightAnim : CAAnimationGroup = QCMethod.group(animations: [notificationsbubbleFillColorAnim], fillMode:fillMode)
+		if (reverseAnimation){ notificationsbubbleHighlightAnim = QCMethod.reverseAnimation(anim: notificationsbubbleHighlightAnim, totalDuration:totalDuration) as! CAAnimationGroup}
+		layers["notificationsbubble"]?.add(notificationsbubbleHighlightAnim, forKey:"notificationsbubbleHighlightAnim")
 	}
 	
 	//MARK: - Animation Cleanup
 	
-	public func animationDidStop(_ anim: CAAnimation, finished flag: Bool){
+	func animationDidStop(_ anim: CAAnimation, finished flag: Bool){
 		if let completionBlock = completionBlocks[anim]{
 			completionBlocks.removeValue(forKey: anim)
 			if (flag && updateLayerValueForCompletedAnimation) || anim.value(forKey: "needEndAnim") as! Bool{
@@ -153,12 +167,14 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	func updateLayerValues(forAnimationId identifier: String){
 		if identifier == "highlight"{
 			QCMethod.updateValueFromPresentationLayer(forAnimation: (layers["path"] as! CALayer).animation(forKey: "pathHighlightAnim"), theLayer:(layers["path"] as! CALayer))
+			QCMethod.updateValueFromPresentationLayer(forAnimation: (layers["notificationsbubble"] as! CALayer).animation(forKey: "notificationsbubbleHighlightAnim"), theLayer:(layers["notificationsbubble"] as! CALayer))
 		}
 	}
 	
 	func removeAnimations(forAnimationId identifier: String){
 		if identifier == "highlight"{
 			(layers["path"] as! CALayer).removeAnimation(forKey: "pathHighlightAnim")
+			(layers["notificationsbubble"] as! CALayer).removeAnimation(forKey: "notificationsbubbleHighlightAnim")
 		}
 	}
 	
