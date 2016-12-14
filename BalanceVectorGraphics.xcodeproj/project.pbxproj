@@ -25,6 +25,7 @@
 		53C783481DFA2BDA0032C6AA /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783431DFA2BDA0032C6AA /* QCMethod.swift */; };
 		53C7834B1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */; };
 		53C7834C1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53D592FD1E00DC0E00E51616 /* WelcomeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D592FC1E00DC0E00E51616 /* WelcomeWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		53C783411DFA2BDA0032C6AA /* InstitutionButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstitutionButtons.swift; sourceTree = "<group>"; };
 		53C783421DFA2BDA0032C6AA /* NSFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFont.swift; sourceTree = "<group>"; };
 		53C783431DFA2BDA0032C6AA /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
+		53D592FC1E00DC0E00E51616 /* WelcomeWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */,
 				53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */,
 				53560E801DFCE0F600547AF7 /* ResizingBehavior.swift */,
+				53D592FC1E00DC0E00E51616 /* WelcomeWindow.swift */,
 			);
 			name = PaintCode;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				53C783451DFA2BDA0032C6AA /* BillingButtons.swift in Sources */,
 				53C783481DFA2BDA0032C6AA /* QCMethod.swift in Sources */,
 				53C7833D1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift in Sources */,
+				53D592FD1E00DC0E00E51616 /* WelcomeWindow.swift in Sources */,
 				53560E5C1DFCAB5B00547AF7 /* TouchBarAccounts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
