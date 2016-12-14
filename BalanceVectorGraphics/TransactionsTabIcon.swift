@@ -43,9 +43,7 @@ public class TransactionsTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	func setupLayers(){
 		self.wantsLayer = true
-		
-		self.layer!.backgroundColor = NSColor.black.cgColor
-		
+				
 		let Icon = CAShapeLayer()
 		Icon.frame           = CGRect(x: 6, y: 3, width: 14, height: 14)
 		Icon.fillColor       = self.tabIconColor.cgColor

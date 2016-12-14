@@ -43,9 +43,7 @@ public class InsightsTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	func setupLayers(){
 		self.wantsLayer = true
-		
-		self.layer!.backgroundColor = NSColor.black.cgColor
-		
+				
 		let insights = CAShapeLayer()
 		insights.frame       = CGRect(x: 6, y: 3, width: 13, height: 14)
 		insights.fillColor   = self.tabIconColor.cgColor
