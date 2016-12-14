@@ -17,8 +17,24 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	public var tabIconColor : NSColor!
 	public var tabIconBorderColor : NSColor!
 	public var tabIconSelectedColor : NSColor!
-	public var bubbleColor : NSColor!
-	public var bubbleSelectedColor : NSColor!
+    public var bubbleColor : NSColor! {
+        willSet {
+            if let newValue = newValue, let notificationsBubble = layers["notificationsbubble"] as? CAShapeLayer {
+                if notificationsBubble.fillColor == bubbleColor.cgColor {
+                    notificationsBubble.fillColor = newValue.cgColor
+                }
+            }
+        }
+    }
+    public var bubbleSelectedColor : NSColor! {
+        willSet {
+            if let newValue = newValue, let notificationsBubble = layers["notificationsbubble"] as? CAShapeLayer {
+                if notificationsBubble.fillColor == bubbleSelectedColor.cgColor {
+                    notificationsBubble.fillColor = newValue.cgColor
+                }
+            }
+        }
+    }
 	
 	//MARK: - Life Cycle
 	
