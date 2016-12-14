@@ -8,17 +8,17 @@
 import Cocoa
 
 
-class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
+public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	var layers : Dictionary<String, AnyObject> = [:]
 	var completionBlocks : Dictionary<CAAnimation, (Bool) -> Void> = [:]
 	var updateLayerValueForCompletedAnimation : Bool = false
 	
-	var tabIconColor : NSColor!
-	var tabIconBorderColor : NSColor!
-	var tabIconSelectedColor : NSColor!
-	var bubbleColor : NSColor!
-	var bubbleSelectedColor : NSColor!
+	public var tabIconColor : NSColor!
+	public var tabIconBorderColor : NSColor!
+	public var tabIconSelectedColor : NSColor!
+	public var bubbleColor : NSColor!
+	public var bubbleSelectedColor : NSColor!
 	
 	//MARK: - Life Cycle
 	
@@ -28,7 +28,7 @@ class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 		setupLayers()
 	}
 	
-	required init?(coder aDecoder: NSCoder)
+	public required init?(coder aDecoder: NSCoder)
 	{
 		super.init(coder: aDecoder)
 		setupProperties()
@@ -109,7 +109,7 @@ class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	//MARK: - Animation Setup
 	
-	func addHighlightAnimation(reverseAnimation: Bool = false, completionBlock: ((_ finished: Bool) -> Void)? = nil){
+	public func addHighlightAnimation(reverseAnimation: Bool = false, completionBlock: ((_ finished: Bool) -> Void)? = nil){
 		if completionBlock != nil{
 			let completionAnim = CABasicAnimation(keyPath:"completionAnim")
 			completionAnim.duration = 0.05
@@ -153,7 +153,7 @@ class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	
 	//MARK: - Animation Cleanup
 	
-	func animationDidStop(_ anim: CAAnimation, finished flag: Bool){
+	public func animationDidStop(_ anim: CAAnimation, finished flag: Bool){
 		if let completionBlock = completionBlocks[anim]{
 			completionBlocks.removeValue(forKey: anim)
 			if (flag && updateLayerValueForCompletedAnimation) || anim.value(forKey: "needEndAnim") as! Bool{
