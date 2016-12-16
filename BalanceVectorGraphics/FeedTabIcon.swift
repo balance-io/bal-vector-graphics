@@ -21,6 +21,16 @@ public class FeedTabIcon: NSView, TabIcon, CAAnimationDelegate {
     public var bubbleSelectedColor : NSColor!
 	
 	//MARK: - Life Cycle
+    
+    public init(tabIconColor: NSColor, tabIconBorderColor: NSColor, tabIconSelectedColor: NSColor, bubbleColor: NSColor? = nil, bubbleSelectedColor: NSColor? = nil) {
+        super.init(frame: NSZeroRect)
+        self.tabIconColor = tabIconColor
+        self.tabIconBorderColor = tabIconBorderColor
+        self.tabIconSelectedColor = tabIconSelectedColor
+        self.bubbleColor = bubbleColor ?? tabIconColor
+        self.bubbleSelectedColor = bubbleSelectedColor ?? bubbleSelectedColor
+        setupLayers()
+    }
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)

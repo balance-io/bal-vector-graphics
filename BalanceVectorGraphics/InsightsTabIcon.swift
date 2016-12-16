@@ -19,6 +19,14 @@ public class InsightsTabIcon: NSView, TabIcon, CAAnimationDelegate {
 	public var tabIconSelectedColor : NSColor!
 	
 	//MARK: - Life Cycle
+    
+    public init(tabIconColor: NSColor, tabIconBorderColor: NSColor, tabIconSelectedColor : NSColor) {
+        super.init(frame: NSZeroRect)
+        self.tabIconColor = tabIconColor
+        self.tabIconBorderColor = tabIconBorderColor
+        self.tabIconSelectedColor = tabIconSelectedColor
+        setupLayers()
+    }
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
