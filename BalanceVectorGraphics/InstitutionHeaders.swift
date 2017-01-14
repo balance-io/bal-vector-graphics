@@ -18,6 +18,7 @@ fileprivate let lookupTable: [String: DrawingFunction] =
      "bbt":         InstitutionHeaderBars.drawBbt,
      "ins_109176":  InstitutionHeaderBars.drawBbvaCompass,
      "capone360":   InstitutionHeaderBars.drawCapitalOne,
+     "capone":   InstitutionHeaderBars.drawCapitalOne,
      "ins_107220":  InstitutionHeaderBars.drawCharlesSchwab,
      "chase":       InstitutionHeaderBars.drawChase,
      "citi":        InstitutionHeaderBars.drawCitiBank,
