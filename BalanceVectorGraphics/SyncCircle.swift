@@ -175,7 +175,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             minuteHand.fillColor   = self.syncCircleColor.cgColor
             minuteHand.strokeColor = NSColor.black.cgColor
             minuteHand.lineWidth   = 0
-            minuterHand.fillMode   = kCAFillModeRemoved
+            minuteHand.fillMode   = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("hourHand"){
             let hourHand = layers["hourHand"] as! CAShapeLayer
