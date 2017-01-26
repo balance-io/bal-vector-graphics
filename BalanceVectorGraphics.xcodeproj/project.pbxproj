@@ -17,6 +17,7 @@
 		536F8B791E01079400A3B718 /* TransactionsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */; };
 		536F8B7B1E0107A500A3B718 /* SyncCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B7A1E0107A500A3B718 /* SyncCircle.swift */; };
 		536F8B7D1E01088100A3B718 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B7C1E01088100A3B718 /* TabIcon.swift */; };
+		537964731E39810600E773BF /* SyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537964721E39810600E773BF /* SyncButton.swift */; };
 		53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783271DFA2AE30032C6AA /* AppDelegate.swift */; };
 		53C7832A1DFA2AE30032C6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C783291DFA2AE30032C6AA /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTabIcon.swift; sourceTree = "<group>"; };
 		536F8B7A1E0107A500A3B718 /* SyncCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncCircle.swift; sourceTree = "<group>"; };
 		536F8B7C1E01088100A3B718 /* TabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
+		537964721E39810600E773BF /* SyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncButton.swift; sourceTree = "<group>"; };
 		53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVectorGraphics.h; sourceTree = "<group>"; };
 		53C7831A1DFA2AA60032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				53C783271DFA2AE30032C6AA /* AppDelegate.swift */,
+				537964721E39810600E773BF /* SyncButton.swift */,
 				53C783291DFA2AE30032C6AA /* Assets.xcassets */,
 				53C7832B1DFA2AE30032C6AA /* MainMenu.xib */,
 				53C7832E1DFA2AE30032C6AA /* Info.plist */,
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537964731E39810600E773BF /* SyncButton.swift in Sources */,
 				53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
