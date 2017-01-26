@@ -113,6 +113,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             circle.strokeColor = self.syncCircleColor.cgColor
             circle.lineWidth   = 1.5
             circle.strokeStart = 0.25
+            circle.fillMode = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("circle2"){
             let circle2 = layers["circle2"] as! CAShapeLayer
@@ -122,24 +123,25 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             circle2.strokeColor = self.syncCircleColor.cgColor
             circle2.lineWidth   = 1.5
             circle2.strokeEnd   = 0.75
+            circle2.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("arrowSpin"){
             let arrowSpin = layers["arrowSpin"] as! CALayer
             arrowSpin.anchorPoint = CGPoint(x: 1.747, y: 1)
             arrowSpin.frame       = CGRect(x: 3, y: 8.67, width: 5.76, height: 4.33)
-            
+            arrowSpin.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("arrowSpinAgain"){
             let arrowSpinAgain = layers["arrowSpinAgain"] as! CALayer
             arrowSpinAgain.anchorPoint = CGPoint(x: 1.747, y: 1)
             arrowSpinAgain.frame       = CGRect(x: 0, y: 0, width: 5.76, height: 4.33)
-            
+            arrowSpinAgain.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("arrowFinalSpin"){
             let arrowFinalSpin = layers["arrowFinalSpin"] as! CALayer
             arrowFinalSpin.anchorPoint = CGPoint(x: 1.747, y: 1)
             arrowFinalSpin.frame       = CGRect(x: 0, y: 0, width: 5.76, height: 4.33)
-            
+            arrowFinalSpin.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("arrow"){
             let arrow = layers["arrow"] as! CAShapeLayer
@@ -148,6 +150,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             arrow.fillColor   = self.syncCircleColor.cgColor
             arrow.strokeColor = NSColor.black.cgColor
             arrow.lineWidth   = 0
+            arrow.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("hiddenArrow"){
             let hiddenArrow = layers["hiddenArrow"] as! CAShapeLayer
@@ -157,12 +160,13 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             hiddenArrow.fillColor   = self.syncCircleColor.cgColor
             hiddenArrow.strokeColor = NSColor.black.cgColor
             hiddenArrow.lineWidth   = 0
+            hiddenArrow.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("clock"){
             let clock = layers["clock"] as! CALayer
             clock.anchorPoint = CGPoint(x: 0.25, y: 0.287)
             clock.frame       = CGRect(x: 12.01, y: 10.37, width: 4.44, height: 7.55)
-            
+            clock.fillMode    = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("minuteHand"){
             let minuteHand = layers["minuteHand"] as! CAShapeLayer
@@ -171,6 +175,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             minuteHand.fillColor   = self.syncCircleColor.cgColor
             minuteHand.strokeColor = NSColor.black.cgColor
             minuteHand.lineWidth   = 0
+            minuterHand.fillMode   = kCAFillModeRemoved
         }
         if layerIds == nil || layerIds.contains("hourHand"){
             let hourHand = layers["hourHand"] as! CAShapeLayer
@@ -179,6 +184,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
             hourHand.fillColor   = self.syncCircleColor.cgColor
             hourHand.strokeColor = NSColor.black.cgColor
             hourHand.lineWidth   = 0
+            hourHand.fillMode    = kCAFillModeRemoved
         }
         
         CATransaction.commit()
