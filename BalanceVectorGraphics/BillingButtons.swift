@@ -12,11 +12,11 @@
 
 import Cocoa
 
-open class BillingButtons : NSObject {
+public struct BillingButtons {
 
     //// Drawing Methods
 
-    open class func drawCurrentPlan(frame: NSRect = NSMakeRect(0, 0, 80, 25), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
+    public static func drawCurrentPlan(frame: NSRect = NSMakeRect(0, 0, 80, 25), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -75,7 +75,7 @@ open class BillingButtons : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
 
-    open class func drawUpgrade(frame: NSRect = NSMakeRect(0, 0, 86, 28), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
+    public static func drawUpgrade(frame: NSRect = NSMakeRect(0, 0, 86, 28), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -138,7 +138,7 @@ open class BillingButtons : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
 
-    open class func drawDowngrade(frame: NSRect = NSMakeRect(0, 0, 86, 28), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
+    public static func drawDowngrade(frame: NSRect = NSMakeRect(0, 0, 86, 28), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 

@@ -13,11 +13,11 @@
 
 import Cocoa
 
-public class InstitutionButtons : NSObject {
+public struct InstitutionButtons {
 
     //// Drawing Methods
 
-    public dynamic class func drawBoaButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawBoaButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -458,7 +458,7 @@ public class InstitutionButtons : NSObject {
         bankOfAmericaLogoPath.fill()
     }
 
-    public dynamic class func drawChaseButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawChaseButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -748,7 +748,7 @@ public class InstitutionButtons : NSObject {
         chaseLogoPath.fill()
     }
 
-    public dynamic class func drawWellsButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawWellsButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1183,7 +1183,7 @@ public class InstitutionButtons : NSObject {
         wellsFargoLogoPath.fill()
     }
 
-    public dynamic class func drawCitiButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawCitiButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1446,7 +1446,7 @@ public class InstitutionButtons : NSObject {
         path1284Path.fill()
     }
 
-    public dynamic class func drawUsbankButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawUsbankButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1763,7 +1763,7 @@ public class InstitutionButtons : NSObject {
         fill43Path.fill()
     }
 
-    public dynamic class func drawUsaaButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawUsaaButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2131,7 +2131,7 @@ public class InstitutionButtons : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
 
-    public dynamic class func drawPncButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawPncButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2392,7 +2392,7 @@ public class InstitutionButtons : NSObject {
         pncLogoPath.fill()
     }
 
-    public dynamic class func drawSchwabButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawSchwabButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2872,7 +2872,7 @@ public class InstitutionButtons : NSObject {
         charlesSchwabLogoPath.fill()
     }
 
-    public dynamic class func drawAmexButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawAmexButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3132,7 +3132,7 @@ public class InstitutionButtons : NSObject {
         amexLogoPath.fill()
     }
 
-    public dynamic class func drawCapitalOneButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawCapitalOneButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3483,7 +3483,7 @@ public class InstitutionButtons : NSObject {
         capitalOneLogoPath.fill()
     }
 
-    public dynamic class func drawEtradeButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawEtradeButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3800,7 +3800,7 @@ public class InstitutionButtons : NSObject {
         textPath.fill()
     }
 
-    public dynamic class func drawScottradeButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawScottradeButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4221,7 +4221,7 @@ public class InstitutionButtons : NSObject {
         path11897Path.fill()
     }
 
-    public dynamic class func drawTdButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawTdButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4655,7 +4655,7 @@ public class InstitutionButtons : NSObject {
         tdBankLogoPath.fill()
     }
 
-    public dynamic class func drawFidelityButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawFidelityButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4950,7 +4950,7 @@ public class InstitutionButtons : NSObject {
         fidelityLogoPath.fill()
     }
 
-    public dynamic class func drawPaypalButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawPaypalButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5336,7 +5336,7 @@ public class InstitutionButtons : NSObject {
         shape3Path.fill()
     }
 
-    public dynamic class func drawVenmoButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawVenmoButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5596,7 +5596,7 @@ public class InstitutionButtons : NSObject {
         venmoLogoPath.fill()
     }
 
-    public dynamic class func drawSimpleButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawSimpleButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -6242,7 +6242,7 @@ public class InstitutionButtons : NSObject {
         shape2Path.fill()
     }
 
-    public dynamic class func drawDigitButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawDigitButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -6615,7 +6615,7 @@ public class InstitutionButtons : NSObject {
         shape4Path.fill()
     }
 
-    public dynamic class func drawDiscoverButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+    public static func drawDiscoverButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 

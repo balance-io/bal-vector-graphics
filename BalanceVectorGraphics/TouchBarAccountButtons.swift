@@ -13,11 +13,11 @@
 
 import Cocoa
 
-public class TouchBarAccountButtons : NSObject {
+public struct TouchBarAccountButtons  {
 
     //// Drawing Methods
 
-    public dynamic class func drawAmex(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawAmex(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -138,7 +138,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawChase(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawChase(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -289,7 +289,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawDiscover(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawDiscover(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -452,7 +452,7 @@ public class TouchBarAccountButtons : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
 
-    public dynamic class func drawCapitalOne(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawCapitalOne(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -664,7 +664,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawMtBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawMtBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -895,7 +895,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawCitiBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawCitiBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -1020,7 +1020,7 @@ public class TouchBarAccountButtons : NSObject {
         path1284Path.fill()
     }
 
-    public dynamic class func drawHsbc(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawHsbc(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1084,7 +1084,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawBankOfAmerica(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawBankOfAmerica(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1163,7 +1163,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawWellsFargo(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawWellsFargo(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1265,7 +1265,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawUsaa(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawUsaa(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1459,7 +1459,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawUsBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawUsBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -1565,7 +1565,7 @@ public class TouchBarAccountButtons : NSObject {
         fill43Path.fill()
     }
 
-    public dynamic class func drawPnc(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawPnc(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -1687,7 +1687,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawEtrade(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawEtrade(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -1872,7 +1872,7 @@ public class TouchBarAccountButtons : NSObject {
         textPath.fill()
     }
 
-    public dynamic class func drawScottrade(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawScottrade(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2118,7 +2118,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawTdBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawTdBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2186,7 +2186,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawFidelity(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawFidelity(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2342,7 +2342,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawPaypal(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawPaypal(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2517,7 +2517,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawVenmo(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawVenmo(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -2638,7 +2638,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawSimple(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawSimple(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3137,7 +3137,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawDigit(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawDigit(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3307,7 +3307,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawTarget(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawTarget(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3368,7 +3368,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawSuntrust(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawSuntrust(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3588,7 +3588,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawBbt(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawBbt(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3743,7 +3743,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawBarclaycard(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawBarclaycard(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -3968,7 +3968,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawCitizensBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawCitizensBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4198,7 +4198,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawBankOfTheWest(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawBankOfTheWest(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4392,7 +4392,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawRegionsBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawRegionsBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4583,7 +4583,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawAllyFinancial(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawAllyFinancial(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4705,7 +4705,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawNavyFederalCreditUnion(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawNavyFederalCreditUnion(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4794,7 +4794,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawUnionBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawUnionBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -4901,7 +4901,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawVanguard(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawVanguard(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5116,7 +5116,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawHuntingtonBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawHuntingtonBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5359,7 +5359,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawSiliconValleyBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawSiliconValleyBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5463,7 +5463,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawKeyBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawKeyBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5581,7 +5581,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawNavient(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawNavient(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5723,7 +5723,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawBbva(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawBbva(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -5830,7 +5830,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawWoodforestBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawWoodforestBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 
@@ -6177,7 +6177,7 @@ public class TouchBarAccountButtons : NSObject {
         logoPath.fill()
     }
 
-    public dynamic class func drawFifthThirdBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
+    public static func drawFifthThirdBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
 

@@ -13,11 +13,11 @@
 
 import Cocoa
 
-public class AccountConnectionErrors : NSObject {
+public struct AccountConnectionErrors {
     
     //// Drawing Methods
     
-    public dynamic class func drawConnectionErrorsLight(frame: NSRect = NSRect(x: 0, y: 0, width: 400, height: 122)) {
+    public static func drawConnectionErrorsLight(frame: NSRect = NSRect(x: 0, y: 0, width: 400, height: 122)) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -118,7 +118,7 @@ public class AccountConnectionErrors : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
     
-    public dynamic class func drawConnectionErrorsDark(frame: NSRect = NSRect(x: 0, y: 0, width: 400, height: 122)) {
+    public static func drawConnectionErrorsDark(frame: NSRect = NSRect(x: 0, y: 0, width: 400, height: 122)) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -218,7 +218,7 @@ public class AccountConnectionErrors : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
     
-    public dynamic class func drawReconnectButtonLight(frame: NSRect = NSRect(x: 0, y: 0, width: 82, height: 27), buttonText: String = "Reconnect", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor = NSColor(deviceRed: 0.404, green: 0.431, blue: 0.459, alpha: 1)) {
+    public static func drawReconnectButtonLight(frame: NSRect = NSRect(x: 0, y: 0, width: 82, height: 27), buttonText: String = "Reconnect", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor = NSColor(deviceRed: 0.404, green: 0.431, blue: 0.459, alpha: 1)) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
@@ -306,7 +306,7 @@ public class AccountConnectionErrors : NSObject {
         NSGraphicsContext.restoreGraphicsState()
     }
     
-    public dynamic class func drawReconnectButtonDark(frame: NSRect = NSRect(x: 0, y: 0, width: 82, height: 27), buttonText: String = "Reconnect", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor = NSColor(deviceRed: 0.333, green: 0.353, blue: 0.38, alpha: 1)) {
+    public static func drawReconnectButtonDark(frame: NSRect = NSRect(x: 0, y: 0, width: 82, height: 27), buttonText: String = "Reconnect", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor = NSColor(deviceRed: 0.333, green: 0.353, blue: 0.38, alpha: 1)) {
         //// General Declarations
         let context = NSGraphicsContext.current()!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
