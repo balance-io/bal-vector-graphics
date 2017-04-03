@@ -106,7 +106,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         if layerIds == nil || layerIds.contains("circle"){
             let circle = layers["circle"] as! CAShapeLayer
-            circle.setValue(-90 * CGFloat(M_PI)/180, forKeyPath:"transform.rotation")
+            circle.setValue(-90 * CGFloat.pi/180, forKeyPath:"transform.rotation")
             circle.opacity     = 0
             circle.lineCap     = kCALineCapRound
             circle.fillColor   = nil
@@ -117,7 +117,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         }
         if layerIds == nil || layerIds.contains("circle2"){
             let circle2 = layers["circle2"] as! CAShapeLayer
-            circle2.setValue(-180 * CGFloat(M_PI)/180, forKeyPath:"transform.rotation")
+            circle2.setValue(-180 * CGFloat.pi/180, forKeyPath:"transform.rotation")
             circle2.lineCap     = kCALineCapRound
             circle2.fillColor   = nil
             circle2.strokeColor = self.syncCircleColor.cgColor
@@ -209,8 +209,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////Spin animation
         let spinTransformAnim      = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        spinTransformAnim.values   = [0,
-                                      360 * CGFloat(M_PI/180)]
+        spinTransformAnim.values   = [0, 360 * (CGFloat.pi/180)]
         spinTransformAnim.keyTimes = [0, 1]
         spinTransformAnim.duration = 1.5
         
@@ -226,8 +225,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         circleStrokeStartAnim.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
         
         let circleTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        circleTransformAnim.values         = [-190 * CGFloat(M_PI/180),
-                                              -90 * CGFloat(M_PI/180)]
+        circleTransformAnim.values         = [-190 * (CGFloat.pi/180), -90 * (CGFloat.pi/180)]
         circleTransformAnim.keyTimes       = [0, 1]
         circleTransformAnim.duration       = 0.75
         circleTransformAnim.beginTime      = 0.75
@@ -260,8 +258,8 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         circle2StrokeStartAnim.duration = 1.5
         
         let circle2TransformAnim      = CAKeyframeAnimation(keyPath:"transform")
-        circle2TransformAnim.values   = [NSValue(caTransform3D: CATransform3DMakeRotation(-180 * CGFloat(M_PI/180), 0, 0, 1)),
-                                         NSValue(caTransform3D: CATransform3DMakeRotation(-180 * CGFloat(M_PI/180), 0, 0, 1))]
+        circle2TransformAnim.values   = [NSValue(caTransform3D: CATransform3DMakeRotation(-180 * (CGFloat.pi/180), 0, 0, 1)),
+                                         NSValue(caTransform3D: CATransform3DMakeRotation(-180 * (CGFloat.pi/180), 0, 0, 1))]
         circle2TransformAnim.keyTimes = [0, 1]
         circle2TransformAnim.duration = 1.5
         
@@ -301,8 +299,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////Spin animation
         let spinTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        spinTransformAnim.values         = [0,
-                                            360 * CGFloat(M_PI/180)]
+        spinTransformAnim.values         = [0, 360 * (CGFloat.pi/180)]
         spinTransformAnim.keyTimes       = [0, 1]
         spinTransformAnim.duration       = 1.5
         spinTransformAnim.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 0.5, 0.5, 1)
@@ -333,7 +330,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         ////ArrowSpin animation
         let arrowSpinTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
         arrowSpinTransformAnim.values         = [0,
-                                                 360 * CGFloat(M_PI/180)]
+                                                 360 * (CGFloat.pi/180)]
         arrowSpinTransformAnim.keyTimes       = [0, 1]
         arrowSpinTransformAnim.duration       = 1.5
         arrowSpinTransformAnim.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 0.5, 0.5, 1)
@@ -354,8 +351,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////MinuteHand animation
         let minuteHandTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        minuteHandTransformAnim.values         = [833 * CGFloat(M_PI/180),
-                                                  0]
+        minuteHandTransformAnim.values         = [833 * (CGFloat.pi/180), 0]
         minuteHandTransformAnim.keyTimes       = [0, 1]
         minuteHandTransformAnim.duration       = 1.15
         minuteHandTransformAnim.beginTime      = 1.25
@@ -372,8 +368,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////HourHand animation
         let hourHandTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        hourHandTransformAnim.values         = [90 * CGFloat(M_PI/180),
-                                                0]
+        hourHandTransformAnim.values         = [90 * (CGFloat.pi/180), 0]
         hourHandTransformAnim.keyTimes       = [0, 1]
         hourHandTransformAnim.duration       = 1.15
         hourHandTransformAnim.beginTime      = 1.25
@@ -406,8 +401,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
 		
         ////Spin animation
         let spinTransformAnim      = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        spinTransformAnim.values   = [0,
-                                      360 * CGFloat(M_PI/180)]
+        spinTransformAnim.values   = [0, 360 * (CGFloat.pi/180)]
         spinTransformAnim.keyTimes = [0, 1]
         spinTransformAnim.duration = 1.5
         
@@ -423,8 +417,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         circleStrokeStartAnim.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
         
         let circleTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        circleTransformAnim.values         = [-190 * CGFloat(M_PI/180),
-                                              -90 * CGFloat(M_PI/180)]
+        circleTransformAnim.values         = [-190 * (CGFloat.pi/180), -90 * (CGFloat.pi/180)]
         circleTransformAnim.keyTimes       = [0, 1]
         circleTransformAnim.duration       = 0.75
         circleTransformAnim.beginTime      = 0.75
@@ -457,8 +450,8 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         circle2StrokeStartAnim.duration = 1.5
         
         let circle2TransformAnim      = CAKeyframeAnimation(keyPath:"transform")
-        circle2TransformAnim.values   = [NSValue(caTransform3D: CATransform3DMakeRotation(-180 * CGFloat(M_PI/180), 0, 0, 1)),
-                                         NSValue(caTransform3D: CATransform3DMakeRotation(-180 * CGFloat(M_PI/180), 0, 0, 1))]
+        circle2TransformAnim.values   = [NSValue(caTransform3D: CATransform3DMakeRotation(-180 * (CGFloat.pi/180), 0, 0, 1)),
+                                         NSValue(caTransform3D: CATransform3DMakeRotation(-180 * (CGFloat.pi/180), 0, 0, 1))]
         circle2TransformAnim.keyTimes = [0, 1]
         circle2TransformAnim.duration = 1.5
         
@@ -473,8 +466,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////ArrowSpin animation
         let arrowSpinTransformAnim      = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        arrowSpinTransformAnim.values   = [0,
-                                           360 * CGFloat(M_PI/180)]
+        arrowSpinTransformAnim.values   = [0, 360 * (CGFloat.pi/180)]
         arrowSpinTransformAnim.keyTimes = [0, 1]
         arrowSpinTransformAnim.duration = 1.5
         
@@ -483,8 +475,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////ArrowSpinAgain animation
         let arrowSpinAgainTransformAnim       = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        arrowSpinAgainTransformAnim.values    = [0,
-                                                 -90 * CGFloat(M_PI/180)]
+        arrowSpinAgainTransformAnim.values    = [0, -90 * (CGFloat.pi/180)]
         arrowSpinAgainTransformAnim.keyTimes  = [0, 1]
         arrowSpinAgainTransformAnim.duration  = 0.75
         arrowSpinAgainTransformAnim.beginTime = 0.75
@@ -495,8 +486,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////ArrowFinalSpin animation
         let arrowFinalSpinTransformAnim       = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        arrowFinalSpinTransformAnim.values    = [0,
-                                                 450 * CGFloat(M_PI/180)]
+        arrowFinalSpinTransformAnim.values    = [0, 450 * (CGFloat.pi/180)]
         arrowFinalSpinTransformAnim.keyTimes  = [0, 1]
         arrowFinalSpinTransformAnim.duration  = 0.75
         arrowFinalSpinTransformAnim.beginTime = 0.75
@@ -530,8 +520,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////MinuteHand animation
         let minuteHandTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        minuteHandTransformAnim.values         = [0,
-                                                  -1800 * CGFloat(M_PI/180)]
+        minuteHandTransformAnim.values         = [0, -1800 * (CGFloat.pi/180)]
         minuteHandTransformAnim.keyTimes       = [0, 1]
         minuteHandTransformAnim.duration       = 1.12
         minuteHandTransformAnim.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseIn)
@@ -549,8 +538,7 @@ public class SyncCircle: NSView, CAAnimationDelegate {
         
         ////HourHand animation
         let hourHandTransformAnim            = CAKeyframeAnimation(keyPath:"transform.rotation.z")
-        hourHandTransformAnim.values         = [0, 
-                                                -360 * CGFloat(M_PI/180)]
+        hourHandTransformAnim.values         = [0, -360 * (CGFloat.pi/180)]
         hourHandTransformAnim.keyTimes       = [0, 1]
         hourHandTransformAnim.duration       = 1.12
         hourHandTransformAnim.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseIn)
