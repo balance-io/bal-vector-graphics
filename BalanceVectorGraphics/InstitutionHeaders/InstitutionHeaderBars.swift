@@ -18,7 +18,7 @@ open class InstitutionHeaderBars : NSObject {
 
     open class func drawAmex(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -185,14 +185,14 @@ open class InstitutionHeaderBars : NSObject {
         amexLogoPath.line(to: NSMakePoint(logo.minX + 7.63, logo.minY + 1.69))
         amexLogoPath.close()
         amexLogoPath.miterLimit = 4
-        amexLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        amexLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         amexLogoPath.fill()
     }
 
     open class func drawBankOfAmerica(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -287,7 +287,7 @@ open class InstitutionHeaderBars : NSObject {
         shapePath.curve(to: NSMakePoint(logo.minX + 9.75, logo.minY + 9.61), controlPoint1: NSMakePoint(logo.minX + 5.17, logo.minY + 7.63), controlPoint2: NSMakePoint(logo.minX + 7.41, logo.minY + 8.71))
         shapePath.close()
         shapePath.miterLimit = 4
-        shapePath.windingRule = NSWindingRule.evenOddWindingRule
+        shapePath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shapePath.fill()
 
@@ -301,7 +301,7 @@ open class InstitutionHeaderBars : NSObject {
         shape2Path.curve(to: NSMakePoint(logo.minX + 6.97, logo.minY + 10.59), controlPoint1: NSMakePoint(logo.minX + 8.23, logo.minY + 10.18), controlPoint2: NSMakePoint(logo.minX + 7.6, logo.minY + 10.39))
         shape2Path.close()
         shape2Path.miterLimit = 4
-        shape2Path.windingRule = NSWindingRule.evenOddWindingRule
+        shape2Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shape2Path.fill()
 
@@ -315,7 +315,7 @@ open class InstitutionHeaderBars : NSObject {
         shape3Path.curve(to: NSMakePoint(logo.minX + 14.81, logo.minY + 9.7), controlPoint1: NSMakePoint(logo.minX + 13.5, logo.minY + 9.25), controlPoint2: NSMakePoint(logo.minX + 14.15, logo.minY + 9.48))
         shape3Path.close()
         shape3Path.miterLimit = 4
-        shape3Path.windingRule = NSWindingRule.evenOddWindingRule
+        shape3Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shape3Path.fill()
 
@@ -329,7 +329,7 @@ open class InstitutionHeaderBars : NSObject {
         shape4Path.curve(to: NSMakePoint(logo.minX + 17.91, logo.minY + 10.63), controlPoint1: NSMakePoint(logo.minX + 16.56, logo.minY + 10.26), controlPoint2: NSMakePoint(logo.minX + 17.23, logo.minY + 10.45))
         shape4Path.close()
         shape4Path.miterLimit = 4
-        shape4Path.windingRule = NSWindingRule.evenOddWindingRule
+        shape4Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shape4Path.fill()
 
@@ -343,7 +343,7 @@ open class InstitutionHeaderBars : NSObject {
         shape5Path.curve(to: NSMakePoint(logo.minX + 22.9, logo.minY + 8.95), controlPoint1: NSMakePoint(logo.minX + 24.46, logo.minY + 8.1), controlPoint2: NSMakePoint(logo.minX + 23.69, logo.minY + 8.54))
         shape5Path.close()
         shape5Path.miterLimit = 4
-        shape5Path.windingRule = NSWindingRule.evenOddWindingRule
+        shape5Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shape5Path.fill()
 
@@ -357,14 +357,14 @@ open class InstitutionHeaderBars : NSObject {
         shape6Path.curve(to: NSMakePoint(logo.minX + 19.54, logo.minY + 10.55), controlPoint1: NSMakePoint(logo.minX + 21.28, logo.minY + 9.78), controlPoint2: NSMakePoint(logo.minX + 20.41, logo.minY + 10.18))
         shape6Path.close()
         shape6Path.miterLimit = 4
-        shape6Path.windingRule = NSWindingRule.evenOddWindingRule
+        shape6Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shape6Path.fill()
     }
 
     open class func drawBankOfTheWest(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -504,7 +504,7 @@ open class InstitutionHeaderBars : NSObject {
         fillPath.line(to: NSMakePoint(logo.minX + 2.61, logo.minY + 8.77))
         fillPath.close()
         fillPath.miterLimit = 4
-        fillPath.windingRule = NSWindingRule.evenOddWindingRule
+        fillPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         bankOfTheWestLogoBackground.setFill()
         fillPath.fill()
 
@@ -549,7 +549,7 @@ open class InstitutionHeaderBars : NSObject {
         fill2Path.line(to: NSMakePoint(logo.minX + 13.94, logo.minY + 4.28))
         fill2Path.close()
         fill2Path.miterLimit = 4
-        fill2Path.windingRule = NSWindingRule.evenOddWindingRule
+        fill2Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         bankOfTheWestLogoBackground.setFill()
         fill2Path.fill()
 
@@ -612,7 +612,7 @@ open class InstitutionHeaderBars : NSObject {
         fill3Path.line(to: NSMakePoint(logo.minX + 21.35, logo.minY))
         fill3Path.close()
         fill3Path.miterLimit = 4
-        fill3Path.windingRule = NSWindingRule.evenOddWindingRule
+        fill3Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         bankOfTheWestLogoBackground.setFill()
         fill3Path.fill()
 
@@ -629,14 +629,14 @@ open class InstitutionHeaderBars : NSObject {
         fill4Path.line(to: NSMakePoint(logo.minX + 4.12, logo.minY + 8.77))
         fill4Path.close()
         fill4Path.miterLimit = 4
-        fill4Path.windingRule = NSWindingRule.evenOddWindingRule
+        fill4Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         bankOfTheWestLogoBackground.setFill()
         fill4Path.fill()
     }
 
     open class func drawBarclaycard(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -907,14 +907,14 @@ open class InstitutionHeaderBars : NSObject {
         barclaycardLogoPath.curve(to: NSMakePoint(logo.minX + 36.19, logo.minY + 5.76), controlPoint1: NSMakePoint(logo.minX + 36.09, logo.minY + 3.95), controlPoint2: NSMakePoint(logo.minX + 36.19, logo.minY + 4.73))
         barclaycardLogoPath.close()
         barclaycardLogoPath.miterLimit = 4
-        barclaycardLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        barclaycardLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         barclaycardLogoPath.fill()
     }
 
     open class func drawBbt(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -1115,14 +1115,14 @@ open class InstitutionHeaderBars : NSObject {
         bbtLogoPath.line(to: NSMakePoint(logo.minX + 11.35, logo.minY + 9.2))
         bbtLogoPath.close()
         bbtLogoPath.miterLimit = 4
-        bbtLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        bbtLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         bbtLogoPath.fill()
     }
 
     open class func drawBbvaCompass(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -1275,14 +1275,14 @@ open class InstitutionHeaderBars : NSObject {
         bbvaLogoPath.line(to: NSMakePoint(logo.minX + 19.63, logo.minY + 8.69))
         bbvaLogoPath.close()
         bbvaLogoPath.miterLimit = 4
-        bbvaLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        bbvaLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         bbvaLogoPath.fill()
     }
 
     open class func drawCapitalOne(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -1540,14 +1540,14 @@ open class InstitutionHeaderBars : NSObject {
         capitalOneLogoPath.curve(to: NSMakePoint(logo.minX + 63.58, logo.minY + 6.47), controlPoint1: NSMakePoint(logo.minX + 65.08, logo.minY + 5.86), controlPoint2: NSMakePoint(logo.minX + 64.53, logo.minY + 6.51))
         capitalOneLogoPath.close()
         capitalOneLogoPath.miterLimit = 4
-        capitalOneLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        capitalOneLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         capitalOneLogoPath.fill()
     }
 
     open class func drawAllyFinancial(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -1715,14 +1715,14 @@ open class InstitutionHeaderBars : NSObject {
         allyFinancialLogoPath.line(to: NSMakePoint(logo.minX + 11.61, logo.minY + 2.75))
         allyFinancialLogoPath.close()
         allyFinancialLogoPath.miterLimit = 4
-        allyFinancialLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        allyFinancialLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         allyFinancialLogoPath.fill()
     }
 
     open class func drawCharlesSchwab(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -2114,14 +2114,14 @@ open class InstitutionHeaderBars : NSObject {
         charlesSchwabLogoPath.line(to: NSMakePoint(logo.minX + 77.9, logo.minY + 3.56))
         charlesSchwabLogoPath.close()
         charlesSchwabLogoPath.miterLimit = 4
-        charlesSchwabLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        charlesSchwabLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         charlesSchwabLogoPath.fill()
     }
 
     open class func drawChase(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -2318,14 +2318,14 @@ open class InstitutionHeaderBars : NSObject {
         chaseLogoPath.line(to: NSMakePoint(logo.minX + 21.8, logo.minY + 7.58))
         chaseLogoPath.close()
         chaseLogoPath.miterLimit = 4
-        chaseLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        chaseLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         chaseLogoPath.fill()
     }
 
     open class func drawCitiBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -2468,7 +2468,7 @@ open class InstitutionHeaderBars : NSObject {
         path1274Path.line(to: NSMakePoint(logo.minX + 18.11, logo.minY + 0.16))
         path1274Path.close()
         path1274Path.miterLimit = 4
-        path1274Path.windingRule = NSWindingRule.evenOddWindingRule
+        path1274Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path1274Path.fill()
 
@@ -2489,14 +2489,14 @@ open class InstitutionHeaderBars : NSObject {
         path1284Path.line(to: NSMakePoint(logo.minX + 20.84, logo.minY + 9.96))
         path1284Path.close()
         path1284Path.miterLimit = 4
-        path1284Path.windingRule = NSWindingRule.evenOddWindingRule
+        path1284Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         citiBankLogoBackground.setFill()
         path1284Path.fill()
     }
 
     open class func drawCitizensBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -2772,14 +2772,14 @@ open class InstitutionHeaderBars : NSObject {
         citizensBankLogoPath.line(to: NSMakePoint(logo.minX + 68.05, logo.minY + 0.12))
         citizensBankLogoPath.close()
         citizensBankLogoPath.miterLimit = 4
-        citizensBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        citizensBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         citizensBankLogoPath.fill()
     }
 
     open class func drawDigit(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -2995,14 +2995,14 @@ open class InstitutionHeaderBars : NSObject {
         digitLogoPath.line(to: NSMakePoint(logo.minX + 22.15, logo.minY + 4.08))
         digitLogoPath.close()
         digitLogoPath.miterLimit = 4
-        digitLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        digitLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         digitLogoPath.fill()
     }
 
     open class func drawDiscover(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -3190,7 +3190,7 @@ open class InstitutionHeaderBars : NSObject {
         discoverLogoBasePath.curve(to: NSMakePoint(logo.minX + 48.75, logo.minY + 4.89), controlPoint1: NSMakePoint(logo.minX + 50.35, logo.minY + 5.35), controlPoint2: NSMakePoint(logo.minX + 49.79, logo.minY + 4.89))
         discoverLogoBasePath.close()
         discoverLogoBasePath.miterLimit = 4
-        discoverLogoBasePath.windingRule = NSWindingRule.evenOddWindingRule
+        discoverLogoBasePath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         discoverLogoBackground.setFill()
         discoverLogoBasePath.fill()
 
@@ -3202,13 +3202,13 @@ open class InstitutionHeaderBars : NSObject {
         circleBase2Path.addClip()
         discoverLogoBackgroundGradient.draw(from: NSMakePoint(circleBase2Rect.midX + 4.51 * circleBase2Rect.width / 9.03, circleBase2Rect.midY + -4.53 * circleBase2Rect.height / 9.05),
             to: NSMakePoint(circleBase2Rect.midX + -4.51 * circleBase2Rect.width / 9.03, circleBase2Rect.midY + 4.53 * circleBase2Rect.height / 9.05),
-            options: [.drawsBeforeStartingLocation, .drawsAfterEndingLocation])
+            options: [NSGradient.DrawingOptions.drawsBeforeStartingLocation, NSGradient.DrawingOptions.drawsAfterEndingLocation])
         NSGraphicsContext.restoreGraphicsState()
     }
 
     open class func drawEtrade(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -3313,7 +3313,7 @@ open class InstitutionHeaderBars : NSObject {
         starLeftPath.line(to: NSMakePoint(logo.minX + 8.91, logo.minY + 7.88))
         starLeftPath.close()
         starLeftPath.miterLimit = 4
-        starLeftPath.windingRule = NSWindingRule.evenOddWindingRule
+        starLeftPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         etradeLogoBackground.setFill()
         starLeftPath.fill()
 
@@ -3335,7 +3335,7 @@ open class InstitutionHeaderBars : NSObject {
         starRightPath.line(to: NSMakePoint(logo.minX + 13.32, logo.minY + 8.84))
         starRightPath.close()
         starRightPath.miterLimit = 4
-        starRightPath.windingRule = NSWindingRule.evenOddWindingRule
+        starRightPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         etradeLogoBackground2.setFill()
         starRightPath.fill()
 
@@ -3433,14 +3433,14 @@ open class InstitutionHeaderBars : NSObject {
         textPath.line(to: NSMakePoint(logo.minX + 27.32, logo.minY + 6.5))
         textPath.close()
         textPath.miterLimit = 4
-        textPath.windingRule = NSWindingRule.evenOddWindingRule
+        textPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         textPath.fill()
     }
 
     open class func drawFidelity(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -3642,14 +3642,14 @@ open class InstitutionHeaderBars : NSObject {
         fidelityLogoPath.line(to: NSMakePoint(logo.minX + 33.95, logo.minY + 8.88))
         fidelityLogoPath.close()
         fidelityLogoPath.miterLimit = 4
-        fidelityLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        fidelityLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         fidelityLogoPath.fill()
     }
 
     open class func drawFifthThirdBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -4219,14 +4219,14 @@ open class InstitutionHeaderBars : NSObject {
         fifthThirdBankLogoPath.line(to: NSMakePoint(logo.minX + 110.99, logo.minY + 0.56))
         fifthThirdBankLogoPath.close()
         fifthThirdBankLogoPath.miterLimit = 4
-        fifthThirdBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        fifthThirdBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         fifthThirdBankLogoPath.fill()
     }
 
     open class func drawHsbc(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -4337,14 +4337,14 @@ open class InstitutionHeaderBars : NSObject {
         hsbcLogoPath.line(to: NSMakePoint(logo.minX + 17.25, logo.minY))
         hsbcLogoPath.close()
         hsbcLogoPath.miterLimit = 4
-        hsbcLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        hsbcLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         hsbcLogoBackground.setFill()
         hsbcLogoPath.fill()
     }
 
     open class func drawHuntingtonBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -4630,7 +4630,7 @@ open class InstitutionHeaderBars : NSObject {
         huntingtonBankLogoPath.line(to: NSMakePoint(logo.minX + 44.02, logo.minY + 4.9))
         huntingtonBankLogoPath.close()
         huntingtonBankLogoPath.miterLimit = 4
-        huntingtonBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        huntingtonBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         huntingtonBankLogoPath.fill()
     }
@@ -4787,14 +4787,14 @@ open class InstitutionHeaderBars : NSObject {
         keyBankLogoPath.line(to: NSMakePoint(logo.minX + 6.36, logo.minY + 3.67))
         keyBankLogoPath.close()
         keyBankLogoPath.miterLimit = 4
-        keyBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        keyBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         keyBankLogoPath.fill()
     }
 
     open class func drawMtBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -5071,14 +5071,14 @@ open class InstitutionHeaderBars : NSObject {
         mtBankLogoPath.line(to: NSMakePoint(logo.minX + 49.41, logo.minY + 7.12))
         mtBankLogoPath.close()
         mtBankLogoPath.miterLimit = 4
-        mtBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        mtBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         mtBankLogoPath.fill()
     }
 
     open class func drawNavient(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -5266,14 +5266,14 @@ open class InstitutionHeaderBars : NSObject {
         combinedShapePath.line(to: NSMakePoint(logo.minX + 49.9, logo.minY + 7.25))
         combinedShapePath.close()
         combinedShapePath.miterLimit = 4
-        combinedShapePath.windingRule = NSWindingRule.evenOddWindingRule
+        combinedShapePath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         combinedShapePath.fill()
     }
 
     open class func drawNavyFederalCreditUnion(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -5410,14 +5410,14 @@ open class InstitutionHeaderBars : NSObject {
         navyFederalCreditUnionLogoPath.line(to: NSMakePoint(logo.minX + 13.15, logo.minY + 3.16))
         navyFederalCreditUnionLogoPath.close()
         navyFederalCreditUnionLogoPath.miterLimit = 4
-        navyFederalCreditUnionLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        navyFederalCreditUnionLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         navyFederalCreditUnionLogoPath.fill()
     }
 
     open class func drawPaypal(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -5638,14 +5638,14 @@ open class InstitutionHeaderBars : NSObject {
         paypalTextPath.line(to: NSMakePoint(logo.minX + 33.36, logo.minY + 4.81))
         paypalTextPath.close()
         paypalTextPath.miterLimit = 4
-        paypalTextPath.windingRule = NSWindingRule.evenOddWindingRule
+        paypalTextPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         paypalTextPath.fill()
     }
 
     open class func drawPnc(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -5813,14 +5813,14 @@ open class InstitutionHeaderBars : NSObject {
         pncLogoPath.line(to: NSMakePoint(logo.minX + 41, logo.minY + 1.46))
         pncLogoPath.close()
         pncLogoPath.miterLimit = 4
-        pncLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        pncLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         pncLogoPath.fill()
     }
 
     open class func drawRegionsBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -6057,14 +6057,14 @@ open class InstitutionHeaderBars : NSObject {
         regionsBankLogoPath.line(to: NSMakePoint(logo.minX + 53.59, logo.minY + 5.43))
         regionsBankLogoPath.close()
         regionsBankLogoPath.miterLimit = 4
-        regionsBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        regionsBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         regionsBankLogoPath.fill()
     }
 
     open class func drawScottrade(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -6228,7 +6228,7 @@ open class InstitutionHeaderBars : NSObject {
         path11857Path.curve(to: NSMakePoint(logo.minX + 23.53, logo.minY + 8.97), controlPoint1: NSMakePoint(logo.minX + 24.82, logo.minY + 9.43), controlPoint2: NSMakePoint(logo.minX + 24.13, logo.minY + 9.24))
         path11857Path.close()
         path11857Path.miterLimit = 4
-        path11857Path.windingRule = NSWindingRule.evenOddWindingRule
+        path11857Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path11857Path.fill()
 
@@ -6272,7 +6272,7 @@ open class InstitutionHeaderBars : NSObject {
         path11877Path.curve(to: NSMakePoint(logo.minX + 35.08, logo.minY + 5.51), controlPoint1: NSMakePoint(logo.minX + 34.97, logo.minY + 4.34), controlPoint2: NSMakePoint(logo.minX + 35.15, logo.minY + 4.89))
         path11877Path.close()
         path11877Path.miterLimit = 4
-        path11877Path.windingRule = NSWindingRule.evenOddWindingRule
+        path11877Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path11877Path.fill()
 
@@ -6303,7 +6303,7 @@ open class InstitutionHeaderBars : NSObject {
         path11881Path.curve(to: NSMakePoint(logo.minX + 41.83, logo.minY + 9.23), controlPoint1: NSMakePoint(logo.minX + 40.5, logo.minY + 3.19), controlPoint2: NSMakePoint(logo.minX + 41.17, logo.minY + 6.2))
         path11881Path.close()
         path11881Path.miterLimit = 4
-        path11881Path.windingRule = NSWindingRule.evenOddWindingRule
+        path11881Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path11881Path.fill()
 
@@ -6329,7 +6329,7 @@ open class InstitutionHeaderBars : NSObject {
         path11885Path.curve(to: NSMakePoint(logo.minX + 46.31, logo.minY + 5.92), controlPoint1: NSMakePoint(logo.minX + 46.45, logo.minY + 3.98), controlPoint2: NSMakePoint(logo.minX + 46.79, logo.minY + 5.2))
         path11885Path.close()
         path11885Path.miterLimit = 4
-        path11885Path.windingRule = NSWindingRule.evenOddWindingRule
+        path11885Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path11885Path.fill()
 
@@ -6360,7 +6360,7 @@ open class InstitutionHeaderBars : NSObject {
         path11893Path.curve(to: NSMakePoint(logo.minX + 17.9, logo.minY + 5.2), controlPoint1: NSMakePoint(logo.minX + 17.8, logo.minY + 3.57), controlPoint2: NSMakePoint(logo.minX + 17.97, logo.minY + 4.45))
         path11893Path.close()
         path11893Path.miterLimit = 4
-        path11893Path.windingRule = NSWindingRule.evenOddWindingRule
+        path11893Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path11893Path.fill()
 
@@ -6396,14 +6396,14 @@ open class InstitutionHeaderBars : NSObject {
         path11897Path.curve(to: NSMakePoint(logo.minX + 24.27, logo.minY + 10.79), controlPoint1: NSMakePoint(logo.minX + 24.84, logo.minY + 10.55), controlPoint2: NSMakePoint(logo.minX + 24.56, logo.minY + 10.67))
         path11897Path.close()
         path11897Path.miterLimit = 4
-        path11897Path.windingRule = NSWindingRule.evenOddWindingRule
+        path11897Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         path11897Path.fill()
     }
 
     open class func drawSiliconValleyBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -6553,14 +6553,14 @@ open class InstitutionHeaderBars : NSObject {
         siliconValleyBankLogoPath.curve(to: NSMakePoint(logo.minX + 2.94, logo.minY + 4.8), controlPoint1: NSMakePoint(logo.minX + 5.17, logo.minY + 3.95), controlPoint2: NSMakePoint(logo.minX + 4.25, logo.minY + 4.44))
         siliconValleyBankLogoPath.close()
         siliconValleyBankLogoPath.miterLimit = 4
-        siliconValleyBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        siliconValleyBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         siliconValleyBankLogoPath.fill()
     }
 
     open class func drawSimple(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -6775,7 +6775,7 @@ open class InstitutionHeaderBars : NSObject {
         simple3Path.curve(to: NSMakePoint(logo.minX + 59.79, logo.minY + 8.49), controlPoint1: NSMakePoint(logo.minX + 59.97, logo.minY + 8.57), controlPoint2: NSMakePoint(logo.minX + 59.89, logo.minY + 8.49))
         simple3Path.close()
         simple3Path.miterLimit = 4
-        simple3Path.windingRule = NSWindingRule.evenOddWindingRule
+        simple3Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         simple3Path.fill()
 
@@ -7113,14 +7113,14 @@ open class InstitutionHeaderBars : NSObject {
         shapePath.line(to: NSMakePoint(logo.minX + 11.21, logo.minY + 5.74))
         shapePath.close()
         shapePath.miterLimit = 4
-        shapePath.windingRule = NSWindingRule.evenOddWindingRule
+        shapePath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         shapePath.fill()
     }
 
     open class func drawSuntrust(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -7386,14 +7386,14 @@ open class InstitutionHeaderBars : NSObject {
         suntrustLogoPath.line(to: NSMakePoint(logo.minX + 13.51, logo.minY + 6.38))
         suntrustLogoPath.close()
         suntrustLogoPath.miterLimit = 4
-        suntrustLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        suntrustLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         suntrustLogoBackground.setFill()
         suntrustLogoPath.fill()
     }
 
     open class func drawTarget(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -7500,14 +7500,14 @@ open class InstitutionHeaderBars : NSObject {
         targetLogoPath.curve(to: NSMakePoint(logo.minX + 6.5, logo.minY + 8.73), controlPoint1: NSMakePoint(logo.minX + 8.73, logo.minY + 7.73), controlPoint2: NSMakePoint(logo.minX + 7.73, logo.minY + 8.73))
         targetLogoPath.close()
         targetLogoPath.miterLimit = 4
-        targetLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        targetLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         targetLogoPath.fill()
     }
 
     open class func drawTdBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -7621,14 +7621,14 @@ open class InstitutionHeaderBars : NSObject {
         tdBankLogoPath.line(to: NSMakePoint(logo.minX + 8.92, logo.minY + 1.68))
         tdBankLogoPath.close()
         tdBankLogoPath.miterLimit = 4
-        tdBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        tdBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         tdBankLogoPath.fill()
     }
 
     open class func drawUnionBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -7781,14 +7781,14 @@ open class InstitutionHeaderBars : NSObject {
         unionBankLogoPath.line(to: NSMakePoint(logo.minX + 29.75, logo.minY + 0.13))
         unionBankLogoPath.close()
         unionBankLogoPath.miterLimit = 4
-        unionBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        unionBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         unionBankLogoPath.fill()
     }
 
     open class func drawUsaa(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -8028,14 +8028,14 @@ open class InstitutionHeaderBars : NSObject {
         usaaLogoPath.line(to: NSMakePoint(logo.minX + 7.29, logo.minY + 3.87))
         usaaLogoPath.close()
         usaaLogoPath.miterLimit = 4
-        usaaLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        usaaLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         usaaLogoBackground.setFill()
         usaaLogoPath.fill()
     }
 
     open class func drawUsBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -8132,7 +8132,7 @@ open class InstitutionHeaderBars : NSObject {
         path2Path.line(to: NSMakePoint(logo.minX, logo.minY + 14.09))
         path2Path.close()
         path2Path.miterLimit = 4
-        path2Path.windingRule = NSWindingRule.evenOddWindingRule
+        path2Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         usBankLogoBackground.setFill()
         path2Path.fill()
 
@@ -8159,7 +8159,7 @@ open class InstitutionHeaderBars : NSObject {
         fill44Path.line(to: NSMakePoint(logo.minX + 14.72, logo.minY + 8.95))
         fill44Path.close()
         fill44Path.miterLimit = 4
-        fill44Path.windingRule = NSWindingRule.evenOddWindingRule
+        fill44Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         fill44Path.fill()
 
@@ -8181,14 +8181,14 @@ open class InstitutionHeaderBars : NSObject {
         fill43Path.line(to: NSMakePoint(logo.minX + 9.24, logo.minY + 3.5))
         fill43Path.close()
         fill43Path.miterLimit = 4
-        fill43Path.windingRule = NSWindingRule.evenOddWindingRule
+        fill43Path.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         fill43Path.fill()
     }
 
     open class func drawVanguard(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -8449,14 +8449,14 @@ open class InstitutionHeaderBars : NSObject {
         vanguardLogoPath.curve(to: NSMakePoint(logo.minX + 23.56, logo.minY + 5.77), controlPoint1: NSMakePoint(logo.minX + 24.28, logo.minY + 6.91), controlPoint2: NSMakePoint(logo.minX + 24.38, logo.minY + 5.77))
         vanguardLogoPath.close()
         vanguardLogoPath.miterLimit = 4
-        vanguardLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        vanguardLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         vanguardLogoPath.fill()
     }
 
     open class func drawVenmo(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -8623,14 +8623,14 @@ open class InstitutionHeaderBars : NSObject {
         venmoLogoPath.curve(to: NSMakePoint(logo.minX + 10.39, logo.minY + 4.59), controlPoint1: NSMakePoint(logo.minX + 11.12, logo.minY + 6.18), controlPoint2: NSMakePoint(logo.minX + 10.46, logo.minY + 5.53))
         venmoLogoPath.close()
         venmoLogoPath.miterLimit = 4
-        venmoLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        venmoLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         venmoLogoPath.fill()
     }
 
     open class func drawWellsFargo(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -8778,14 +8778,14 @@ open class InstitutionHeaderBars : NSObject {
         wellsFargoLogoPath.line(to: NSMakePoint(logo.minX + 22.24, logo.minY + 1.14))
         wellsFargoLogoPath.close()
         wellsFargoLogoPath.miterLimit = 4
-        wellsFargoLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        wellsFargoLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         wellsFargoLogoBackground.setFill()
         wellsFargoLogoPath.fill()
     }
 
     open class func drawWoodforestBank(frame: NSRect = NSMakeRect(0, 0, 400, 28)) {
         //// General Declarations
-        let context = unsafeBitCast(NSGraphicsContext.current()!.graphicsPort, to: CGContext.self)
+        let context = unsafeBitCast(NSGraphicsContext.current!.graphicsPort, to: CGContext.self)
 
         //// Color Declarations
         let black = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 1)
@@ -9178,7 +9178,7 @@ open class InstitutionHeaderBars : NSObject {
         woodforestBankLogoPath.line(to: NSMakePoint(logo.minX + 36.43, logo.minY + 8.11))
         woodforestBankLogoPath.close()
         woodforestBankLogoPath.miterLimit = 4
-        woodforestBankLogoPath.windingRule = NSWindingRule.evenOddWindingRule
+        woodforestBankLogoPath.windingRule = NSBezierPath.WindingRule.evenOddWindingRule
         white.setFill()
         woodforestBankLogoPath.fill()
     }

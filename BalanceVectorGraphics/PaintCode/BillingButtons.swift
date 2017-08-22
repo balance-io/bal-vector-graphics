@@ -18,7 +18,7 @@ public struct BillingButtons {
 
     public static func drawCurrentPlan(frame: NSRect = NSMakeRect(0, 0, 80, 25), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let button = NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.26)
@@ -37,7 +37,7 @@ public struct BillingButtons {
 
         ////// Rectangle Inner Shadow
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(rectanglePath.bounds)
+        rectanglePath.bounds.clip()
         context.setShadow(offset: CGSize.zero, blur: 0, color: nil)
 
         context.setAlpha(shadow.shadowColor!.alphaComponent)
@@ -65,19 +65,19 @@ public struct BillingButtons {
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
 
-        let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 12), NSForegroundColorAttributeName: buttonTextColor, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.mediumSystemFont(ofSize: 12), NSAttributedStringKey.foregroundColor: buttonTextColor, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = NSString(string: buttonText).boundingRect(with: NSMakeSize(textRect.width, CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).size.height
+        let textTextHeight: CGFloat = NSString(string: buttonText).boundingRect(with: NSMakeSize(textRect.width, CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).size.height
         let textTextRect: NSRect = NSMakeRect(textRect.minX, textRect.minY + (textRect.height - textTextHeight) / 2, textRect.width, textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         NSString(string: buttonText).draw(in: NSOffsetRect(textTextRect, 0, 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
     }
 
     public static func drawUpgrade(frame: NSRect = NSMakeRect(0, 0, 86, 28), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let buttonTextColor = buttonTextColor
@@ -128,19 +128,19 @@ public struct BillingButtons {
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
 
-        let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 12), NSForegroundColorAttributeName: buttonTextColor, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.mediumSystemFont(ofSize: 12), NSAttributedStringKey.foregroundColor: buttonTextColor, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = NSString(string: buttonText).boundingRect(with: NSMakeSize(textRect.width, CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).size.height
+        let textTextHeight: CGFloat = NSString(string: buttonText).boundingRect(with: NSMakeSize(textRect.width, CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).size.height
         let textTextRect: NSRect = NSMakeRect(textRect.minX, textRect.minY + (textRect.height - textTextHeight) / 2, textRect.width, textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         NSString(string: buttonText).draw(in: NSOffsetRect(textTextRect, 0, 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
     }
 
     public static func drawDowngrade(frame: NSRect = NSMakeRect(0, 0, 86, 28), buttonText: String = "Current Plan", original: Bool = true, pressed: Bool = false, buttonTextColor: NSColor) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let buttonTextColor = buttonTextColor
@@ -216,12 +216,12 @@ public struct BillingButtons {
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
 
-        let textFontAttributes = [NSFontAttributeName: NSFont.mediumSystemFont(ofSize: 12), NSForegroundColorAttributeName: buttonTextColor, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.mediumSystemFont(ofSize: 12), NSAttributedStringKey.foregroundColor: buttonTextColor, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = NSString(string: buttonText).boundingRect(with: NSMakeSize(textRect.width, CGFloat.infinity), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).size.height
+        let textTextHeight: CGFloat = NSString(string: buttonText).boundingRect(with: NSMakeSize(textRect.width, CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).size.height
         let textTextRect: NSRect = NSMakeRect(textRect.minX, textRect.minY + (textRect.height - textTextHeight) / 2, textRect.width, textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         NSString(string: buttonText).draw(in: NSOffsetRect(textTextRect, 0, 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
     }

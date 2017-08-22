@@ -19,7 +19,7 @@ public struct InstitutionButtons {
 
     public static func drawBoaButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -62,7 +62,7 @@ public struct InstitutionButtons {
 
             ////// bankOfAmericaHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(bankOfAmericaHighlightPath.bounds)
+            bankOfAmericaHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -113,7 +113,7 @@ public struct InstitutionButtons {
 
             ////// bankOfAmericaHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(bankOfAmericaHighlight2Path.bounds)
+            bankOfAmericaHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -163,7 +163,7 @@ public struct InstitutionButtons {
 
             ////// bankOfAmericaHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(bankOfAmericaHighlight3Path.bounds)
+            bankOfAmericaHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -460,7 +460,7 @@ public struct InstitutionButtons {
 
     public static func drawChaseButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let chaseBackground = NSColor(deviceRed: 0.016, green: 0.349, blue: 0.663, alpha: 1)
@@ -503,7 +503,7 @@ public struct InstitutionButtons {
 
             ////// chaseHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(chaseHighlightPath.bounds)
+            chaseHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -554,7 +554,7 @@ public struct InstitutionButtons {
 
             ////// chaseHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(chaseHighlight2Path.bounds)
+            chaseHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -604,7 +604,7 @@ public struct InstitutionButtons {
 
             ////// chaseHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(chaseHighlight3Path.bounds)
+            chaseHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -750,7 +750,7 @@ public struct InstitutionButtons {
 
     public static func drawWellsButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -793,7 +793,7 @@ public struct InstitutionButtons {
 
             ////// wellsFargoHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(wellsFargoHighlightPath.bounds)
+            wellsFargoHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -844,7 +844,7 @@ public struct InstitutionButtons {
 
             ////// wellsFargoHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(wellsFargoHighlight2Path.bounds)
+            wellsFargoHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -894,7 +894,7 @@ public struct InstitutionButtons {
 
             ////// wellsFargoHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(wellsFargoHighlight3Path.bounds)
+            wellsFargoHighlight3Path.bounds.clip() 
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1185,7 +1185,7 @@ public struct InstitutionButtons {
 
     public static func drawCitiButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -1229,7 +1229,7 @@ public struct InstitutionButtons {
 
             ////// citiHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(citiHighlightPath.bounds)
+            citiHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1280,7 +1280,7 @@ public struct InstitutionButtons {
 
             ////// citiHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(citiHighlight2Path.bounds)
+            citiHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1330,7 +1330,7 @@ public struct InstitutionButtons {
 
             ////// citiHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(citiHighlight3Path.bounds)
+            citiHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1448,7 +1448,7 @@ public struct InstitutionButtons {
 
     public static func drawUsbankButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -1492,7 +1492,7 @@ public struct InstitutionButtons {
 
             ////// usBankHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(usBankHighlightPath.bounds)
+            usBankHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1543,7 +1543,7 @@ public struct InstitutionButtons {
 
             ////// usBankHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(usBankHighlight2Path.bounds)
+            usBankHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1593,7 +1593,7 @@ public struct InstitutionButtons {
 
             ////// usBankHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(usBankHighlight3Path.bounds)
+            usBankHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1765,7 +1765,7 @@ public struct InstitutionButtons {
 
     public static func drawUsaaButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -1815,7 +1815,7 @@ public struct InstitutionButtons {
 
             ////// usaaHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(usaaHighlightPath.bounds)
+            usaaHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1866,7 +1866,7 @@ public struct InstitutionButtons {
 
             ////// usaaHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(usaaHighlight2Path.bounds)
+            usaaHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -1916,7 +1916,7 @@ public struct InstitutionButtons {
 
             ////// usaaHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(usaaHighlight3Path.bounds)
+            usaaHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2104,12 +2104,12 @@ public struct InstitutionButtons {
         usaaLogoPath.addClip()
         usaaLogoGradient.draw(from: NSPoint(x: usaaLogoBounds.midX + 0 * usaaLogoBounds.width / 78.75, y: usaaLogoBounds.midY + -9 * usaaLogoBounds.height / 18),
             to: NSPoint(x: usaaLogoBounds.midX + 0 * usaaLogoBounds.width / 78.75, y: usaaLogoBounds.midY + 9 * usaaLogoBounds.height / 18),
-            options: [.drawsBeforeStartingLocation, .drawsAfterEndingLocation])
+            options: [NSGradient.DrawingOptions.drawsBeforeStartingLocation, NSGradient.DrawingOptions.drawsAfterEndingLocation])
         NSGraphicsContext.restoreGraphicsState()
 
         ////// usaaLogo Inner Shadow
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(usaaLogoPath.bounds)
+        usaaLogoPath.bounds.clip()
         context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
         context.setAlpha(usaaLogoShadow.shadowColor!.alphaComponent)
@@ -2133,7 +2133,7 @@ public struct InstitutionButtons {
 
     public static func drawPncButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -2176,7 +2176,7 @@ public struct InstitutionButtons {
 
             ////// pncHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(pncHighlightPath.bounds)
+            pncHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2227,7 +2227,7 @@ public struct InstitutionButtons {
 
             ////// pncHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(pncHighlight2Path.bounds)
+            pncHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2277,7 +2277,7 @@ public struct InstitutionButtons {
 
             ////// pncHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(pncHighlight3Path.bounds)
+            pncHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2394,7 +2394,7 @@ public struct InstitutionButtons {
 
     public static func drawSchwabButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -2437,7 +2437,7 @@ public struct InstitutionButtons {
 
             ////// charlesSchwabHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(charlesSchwabHighlightPath.bounds)
+            charlesSchwabHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2488,7 +2488,7 @@ public struct InstitutionButtons {
 
             ////// charlesSchwabHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(charlesSchwabHighlight2Path.bounds)
+            charlesSchwabHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2538,7 +2538,7 @@ public struct InstitutionButtons {
 
             ////// charlesSchwabHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(charlesSchwabHighlight3Path.bounds)
+            charlesSchwabHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2874,7 +2874,7 @@ public struct InstitutionButtons {
 
     public static func drawAmexButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -2917,7 +2917,7 @@ public struct InstitutionButtons {
 
             ////// amexHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(amexHighlightPath.bounds)
+            amexHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -2968,7 +2968,7 @@ public struct InstitutionButtons {
 
             ////// amexHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(amexHighlight2Path.bounds)
+            amexHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3018,7 +3018,7 @@ public struct InstitutionButtons {
 
             ////// amexHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(amexHighlight3Path.bounds)
+            amexHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3134,7 +3134,7 @@ public struct InstitutionButtons {
 
     public static func drawCapitalOneButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -3177,7 +3177,7 @@ public struct InstitutionButtons {
 
             ////// capitalOneHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(capitalOneHighlightPath.bounds)
+            capitalOneHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3228,7 +3228,7 @@ public struct InstitutionButtons {
 
             ////// capitalOneHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(capitalOneHighlight2Path.bounds)
+            capitalOneHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3278,7 +3278,7 @@ public struct InstitutionButtons {
 
             ////// capitalOneHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(capitalOneHighlight3Path.bounds)
+            capitalOneHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3485,7 +3485,7 @@ public struct InstitutionButtons {
 
     public static func drawEtradeButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -3530,7 +3530,7 @@ public struct InstitutionButtons {
 
             ////// etradeHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(etradeHighlightPath.bounds)
+            etradeHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3581,7 +3581,7 @@ public struct InstitutionButtons {
 
             ////// etradeHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(etradeHighlight2Path.bounds)
+            etradeHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3631,7 +3631,7 @@ public struct InstitutionButtons {
 
             ////// etradeHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(etradeHighlight3Path.bounds)
+            etradeHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3802,7 +3802,7 @@ public struct InstitutionButtons {
 
     public static func drawScottradeButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -3845,7 +3845,7 @@ public struct InstitutionButtons {
 
             ////// scottradeHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(scottradeHighlightPath.bounds)
+            scottradeHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3896,7 +3896,7 @@ public struct InstitutionButtons {
 
             ////// scottradeHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(scottradeHighlight2Path.bounds)
+            scottradeHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -3946,7 +3946,7 @@ public struct InstitutionButtons {
 
             ////// scottradeHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(scottradeHighlight3Path.bounds)
+            scottradeHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4223,7 +4223,7 @@ public struct InstitutionButtons {
 
     public static func drawTdBank(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(calibratedRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -4265,7 +4265,7 @@ public struct InstitutionButtons {
 
             ////// tdBankHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(tdBankHighlightPath.bounds)
+            tdBankHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4316,7 +4316,7 @@ public struct InstitutionButtons {
 
             ////// tdBankHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(tdBankHighlight2Path.bounds)
+            tdBankHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4366,7 +4366,7 @@ public struct InstitutionButtons {
 
             ////// tdBankHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(tdBankHighlight3Path.bounds)
+            tdBankHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4512,7 +4512,7 @@ public struct InstitutionButtons {
 
     public static func drawFidelityButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -4555,7 +4555,7 @@ public struct InstitutionButtons {
 
             ////// fidelityHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(fidelityHighlightPath.bounds)
+            fidelityHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4606,7 +4606,7 @@ public struct InstitutionButtons {
 
             ////// fidelityHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(fidelityHighlight2Path.bounds)
+            fidelityHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4656,7 +4656,7 @@ public struct InstitutionButtons {
 
             ////// fidelityHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(fidelityHighlight3Path.bounds)
+            fidelityHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4807,7 +4807,7 @@ public struct InstitutionButtons {
 
     public static func drawPaypalButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -4852,7 +4852,7 @@ public struct InstitutionButtons {
 
             ////// paypalHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(paypalHighlightPath.bounds)
+            paypalHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4903,7 +4903,7 @@ public struct InstitutionButtons {
 
             ////// paypalHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(paypalHighlight2Path.bounds)
+            paypalHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -4953,7 +4953,7 @@ public struct InstitutionButtons {
 
             ////// paypalHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(paypalHighlight3Path.bounds)
+            paypalHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -5193,7 +5193,7 @@ public struct InstitutionButtons {
 
     public static func drawVenmoButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -5236,7 +5236,7 @@ public struct InstitutionButtons {
 
             ////// venmoHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(venmoHighlightPath.bounds)
+            venmoHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -5287,7 +5287,7 @@ public struct InstitutionButtons {
 
             ////// venmoHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(venmoHighlight2Path.bounds)
+            venmoHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -5337,7 +5337,7 @@ public struct InstitutionButtons {
 
             ////// venmoHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(venmoHighlight3Path.bounds)
+            venmoHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -5453,7 +5453,7 @@ public struct InstitutionButtons {
 
     public static func drawSimpleButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -5496,7 +5496,7 @@ public struct InstitutionButtons {
 
             ////// simpleHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(simpleHighlightPath.bounds)
+            simpleHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -5547,7 +5547,7 @@ public struct InstitutionButtons {
 
             ////// simpleHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(simpleHighlight2Path.bounds)
+            simpleHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -5597,7 +5597,7 @@ public struct InstitutionButtons {
 
             ////// simpleHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(simpleHighlight3Path.bounds)
+            simpleHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6099,7 +6099,7 @@ public struct InstitutionButtons {
 
     public static func drawDigitButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -6142,7 +6142,7 @@ public struct InstitutionButtons {
 
             ////// digitHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(digitHighlightPath.bounds)
+            digitHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6193,7 +6193,7 @@ public struct InstitutionButtons {
 
             ////// digitHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(digitHighlight2Path.bounds)
+            digitHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6243,7 +6243,7 @@ public struct InstitutionButtons {
 
             ////// digitHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(digitHighlight3Path.bounds)
+            digitHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6472,7 +6472,7 @@ public struct InstitutionButtons {
 
     public static func drawDiscoverButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightGradientColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.09)
@@ -6519,7 +6519,7 @@ public struct InstitutionButtons {
 
             ////// discoverHighlight Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(discoverHighlightPath.bounds)
+            discoverHighlightPath.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6570,7 +6570,7 @@ public struct InstitutionButtons {
 
             ////// discoverHighlight 2 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(discoverHighlight2Path.bounds)
+            discoverHighlight2Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6620,7 +6620,7 @@ public struct InstitutionButtons {
 
             ////// discoverHighlight 3 Inner Shadow
             NSGraphicsContext.saveGraphicsState()
-            NSRectClip(discoverHighlight3Path.bounds)
+            discoverHighlight3Path.bounds.clip()
             context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
 
             context.setAlpha(innerStroke.shadowColor!.alphaComponent)
@@ -6759,7 +6759,7 @@ public struct InstitutionButtons {
         oval2Path.addClip()
         discoverLogoGradient.draw(from: NSPoint(x: oval2Rect.midX + 7.03 * oval2Rect.width / 14.06, y: oval2Rect.midY + -7.18 * oval2Rect.height / 14.36),
             to: NSPoint(x: oval2Rect.midX + -7.03 * oval2Rect.width / 14.06, y: oval2Rect.midY + 7.18 * oval2Rect.height / 14.36),
-            options: [.drawsBeforeStartingLocation, .drawsAfterEndingLocation])
+            options: [NSGradient.DrawingOptions.drawsBeforeStartingLocation, NSGradient.DrawingOptions.drawsAfterEndingLocation])
         NSGraphicsContext.restoreGraphicsState()
     }
 

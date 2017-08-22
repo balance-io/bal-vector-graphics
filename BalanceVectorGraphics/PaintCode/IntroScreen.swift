@@ -19,7 +19,7 @@ public struct IntroScreen {
 
     public static func drawLightMonthlyButton(frame: NSRect = NSRect(x: 0, y: 0, width: 84, height: 40), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let shadowColor = NSColor(deviceRed: 0.196, green: 0.196, blue: 0.365, alpha: 1)
@@ -71,12 +71,12 @@ public struct IntroScreen {
         let textTextContent = "Free"
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
-        let textFontAttributes = [NSFontAttributeName: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize()), NSForegroundColorAttributeName: NSColor.white, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize), NSAttributedStringKey.foregroundColor: NSColor.white, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
+        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).height
         let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         textTextContent.draw(in: textTextRect.offsetBy(dx: 0, dy: 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
 
@@ -91,7 +91,7 @@ public struct IntroScreen {
 
     public static func drawBasicAnnualButton(frame: NSRect = NSRect(x: 0, y: 0, width: 90, height: 46), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let basicColor = NSColor(deviceRed: 0, green: 0.463, blue: 1, alpha: 1)
@@ -154,12 +154,12 @@ public struct IntroScreen {
         let textTextContent = "49.99/yr"
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
-        let textFontAttributes = [NSFontAttributeName: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize()), NSForegroundColorAttributeName: basicColor, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize), NSAttributedStringKey.foregroundColor: basicColor, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
+        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).height
         let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         textTextContent.draw(in: textTextRect.offsetBy(dx: 0, dy: 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
 
@@ -174,7 +174,7 @@ public struct IntroScreen {
 
     public static func drawBasicMonthlyButton(frame: NSRect = NSRect(x: 0, y: 0, width: 84, height: 40), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let basicColor = NSColor(deviceRed: 0, green: 0.463, blue: 1, alpha: 1)
@@ -226,12 +226,12 @@ public struct IntroScreen {
         let textTextContent = "4.99/mo"
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
-        let textFontAttributes = [NSFontAttributeName: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize()), NSForegroundColorAttributeName: NSColor.white, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize), NSAttributedStringKey.foregroundColor: NSColor.white, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
+        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).height
         let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         textTextContent.draw(in: textTextRect.offsetBy(dx: 0, dy: 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
 
@@ -246,7 +246,7 @@ public struct IntroScreen {
 
     public static func drawMediumMonthlyButton(frame: NSRect = NSRect(x: 0, y: 0, width: 84, height: 40), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let shadowColor = NSColor(deviceRed: 0.196, green: 0.196, blue: 0.365, alpha: 1)
@@ -298,12 +298,12 @@ public struct IntroScreen {
         let textTextContent = "9.99/mo"
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
-        let textFontAttributes = [NSFontAttributeName: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize()), NSForegroundColorAttributeName: NSColor.white, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize), NSAttributedStringKey.foregroundColor: NSColor.white, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
+        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).height
         let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         textTextContent.draw(in: textTextRect.offsetBy(dx: 0, dy: 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
 
@@ -318,7 +318,7 @@ public struct IntroScreen {
 
     public static func drawMediumAnnualButton(frame: NSRect = NSRect(x: 0, y: 0, width: 90, height: 46), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let shadowColor = NSColor(deviceRed: 0.196, green: 0.196, blue: 0.365, alpha: 1)
@@ -381,12 +381,12 @@ public struct IntroScreen {
         let textTextContent = "99.99/yr"
         let textStyle = NSMutableParagraphStyle()
         textStyle.alignment = .center
-        let textFontAttributes = [NSFontAttributeName: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize()), NSForegroundColorAttributeName: mediumColor, NSParagraphStyleAttributeName: textStyle]
+        let textFontAttributes = [NSAttributedStringKey.font: NSFont.semiboldSystemFont(ofSize: NSFont.systemFontSize), NSAttributedStringKey.foregroundColor: mediumColor, NSAttributedStringKey.paragraphStyle: textStyle]
 
-        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes).height
+        let textTextHeight: CGFloat = textTextContent.boundingRect(with: NSSize(width: textRect.width, height: CGFloat.infinity), options: NSString.DrawingOptions.usesLineFragmentOrigin, attributes: textFontAttributes).height
         let textTextRect: NSRect = NSRect(x: textRect.minX, y: textRect.minY + (textRect.height - textTextHeight) / 2, width: textRect.width, height: textTextHeight)
         NSGraphicsContext.saveGraphicsState()
-        NSRectClip(textRect)
+        textRect.clip()
         textTextContent.draw(in: textTextRect.offsetBy(dx: 0, dy: 1), withAttributes: textFontAttributes)
         NSGraphicsContext.restoreGraphicsState()
 

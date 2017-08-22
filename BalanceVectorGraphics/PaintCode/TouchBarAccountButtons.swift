@@ -19,7 +19,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawAmex(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let amexBackground = NSColor(deviceRed: 0, green: 0.502, blue: 0.847, alpha: 1)
@@ -140,7 +140,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawChase(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -291,7 +291,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawDiscover(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
@@ -448,13 +448,13 @@ public struct TouchBarAccountButtons  {
         oval2Path.addClip()
         discoverLogoBackgroundGradient.draw(from: NSPoint(x: oval2Rect.midX + 5.23 * oval2Rect.width / 10.46, y: oval2Rect.midY + -5.23 * oval2Rect.height / 10.46),
             to: NSPoint(x: oval2Rect.midX + -5.23 * oval2Rect.width / 10.46, y: oval2Rect.midY + 5.23 * oval2Rect.height / 10.46),
-            options: [.drawsBeforeStartingLocation, .drawsAfterEndingLocation])
+            options: [NSGradient.DrawingOptions.drawsBeforeStartingLocation, NSGradient.DrawingOptions.drawsAfterEndingLocation])
         NSGraphicsContext.restoreGraphicsState()
     }
 
     public static func drawCapitalOne(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -666,7 +666,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawMtBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -897,7 +897,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawCitiBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
@@ -1022,7 +1022,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawHsbc(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
@@ -1086,7 +1086,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawBankOfAmerica(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -1165,7 +1165,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawWellsFargo(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let highlightColor = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 0.12)
@@ -1267,7 +1267,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawUsaa(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -1461,7 +1461,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawUsBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
@@ -1567,7 +1567,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawPnc(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -1689,7 +1689,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawEtrade(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
         // This non-generic function dramatically improves compilation times of complex expressions.
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
@@ -1874,7 +1874,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawScottrade(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -2120,7 +2120,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawTdBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -2188,7 +2188,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawFidelity(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -2344,7 +2344,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawPaypal(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -2519,7 +2519,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawVenmo(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -2640,7 +2640,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawSimple(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -3139,7 +3139,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawDigit(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -3309,7 +3309,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawTarget(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -3370,7 +3370,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawSuntrust(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -3590,7 +3590,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawBbt(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -3745,7 +3745,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawBarclaycard(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -3970,7 +3970,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawCitizensBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -4200,7 +4200,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawBankOfTheWest(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -4394,7 +4394,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawRegionsBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -4585,7 +4585,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawAllyFinancial(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -4707,7 +4707,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawNavyFederalCreditUnion(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -4796,7 +4796,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawUnionBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -4903,7 +4903,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawVanguard(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -5118,7 +5118,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawHuntingtonBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -5361,7 +5361,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawSiliconValleyBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -5465,7 +5465,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawKeyBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -5583,7 +5583,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawNavient(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -5725,7 +5725,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawBbva(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -5832,7 +5832,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawWoodforestBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
@@ -6179,7 +6179,7 @@ public struct TouchBarAccountButtons  {
 
     public static func drawFifthThirdBank(frame: NSRect = NSRect(x: 0, y: 0, width: 86, height: 30), original: Bool = true, pressed: Bool = false) {
         //// General Declarations
-        let context = NSGraphicsContext.current()!.cgContext
+        let context = NSGraphicsContext.current!.cgContext
 
         //// Color Declarations
         let white = NSColor(deviceRed: 1, green: 1, blue: 1, alpha: 1)
