@@ -15,6 +15,7 @@ fileprivate let lookupTable: [String: DrawingFunction] =
         "Poloniex":    InstitutionHeaderBars.drawPoloniex,
         "GDAX":        InstitutionHeaderBars.drawGdax,
         "Bitfinex":    InstitutionHeaderBars.drawBitfinex,
+        "Kraken":      InstitutionHeaderBars.drawKraken,
         
         // Plaid
         "ins_100012":  InstitutionHeaderBars.drawAllyFinancial,
