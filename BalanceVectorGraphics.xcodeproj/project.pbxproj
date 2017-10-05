@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5309B7BB1F86DE5900560663 /* InstitutionLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */; };
+		5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */; };
 		53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
 		537964731E39810600E773BF /* SyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537964721E39810600E773BF /* SyncButton.swift */; };
 		53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -84,6 +86,8 @@
 		53012A261F4CD66800FCA0FB /* QCMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
 		53012A271F4CD66800FCA0FB /* SyncCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncCircle.swift; sourceTree = "<group>"; };
 		53012A291F4CD67B00FCA0FB /* NSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFont.swift; sourceTree = "<group>"; };
+		5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionLogos.swift; sourceTree = "<group>"; };
+		5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogos.swift; sourceTree = "<group>"; };
 		53560E611DFCAF3000547AF7 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		537964721E39810600E773BF /* SyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncButton.swift; sourceTree = "<group>"; };
 		53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +175,15 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
+		5309B7B91F86DE1600560663 /* InstitutionLogos */ = {
+			isa = PBXGroup;
+			children = (
+				5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */,
+				5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */,
+			);
+			path = InstitutionLogos;
+			sourceTree = "<group>";
+		};
 		53C7830C1DFA2AA60032C6AA = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +207,7 @@
 			children = (
 				53560E611DFCAF3000547AF7 /* TypeAliases.swift */,
 				53012A151F4CD60C00FCA0FB /* Tab Icons */,
+				5309B7B91F86DE1600560663 /* InstitutionLogos */,
 				53012A101F4CD5EA00FCA0FB /* InstitutionHeaders */,
 				53012A1B1F4CD63C00FCA0FB /* PaintCode */,
 				53012A251F4CD66800FCA0FB /* QuartzCode */,
@@ -336,6 +350,7 @@
 				53E67BC41F4CDCAB00BE6449 /* FeedTabIcon.swift in Sources */,
 				53E67BD81F4CDCC100BE6449 /* TouchBarAccountButtons.swift in Sources */,
 				53E67BCD1F4CDCBB00BE6449 /* CryptoInstitutionHeaderbars.swift in Sources */,
+				5309B7BB1F86DE5900560663 /* InstitutionLogos.swift in Sources */,
 				53E67BCE1F4CDCBB00BE6449 /* InstitutionDefaultBar.swift in Sources */,
 				53E67BC71F4CDCB400BE6449 /* TabIcon.swift in Sources */,
 				53E67BD11F4CDCC100BE6449 /* AccountConnectionErrors.swift in Sources */,
@@ -353,6 +368,7 @@
 				53E67BD51F4CDCC100BE6449 /* IntroScreen.swift in Sources */,
 				53E67BC51F4CDCAE00BE6449 /* AccountsTabIcon.swift in Sources */,
 				53E67BC81F4CDCB400BE6449 /* TransactionsTabIcon.swift in Sources */,
+				5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */,
 				53E67BD31F4CDCC100BE6449 /* CryptoInstitutionButtons.swift in Sources */,
 				53E67BD01F4CDCBB00BE6449 /* InstitutionHeaders.swift in Sources */,
 			);
