@@ -14,12 +14,12 @@ internal enum ResizingBehavior: Int {
     case stretch /// The content is stretched to match the entire target rectangle.
     case center /// The content is centered in the target rectangle, but it is NOT resized.
     
-    internal func apply(rect: NSRect, target: NSRect) -> NSRect {
-        if rect == target || target == NSRect.zero {
+    internal func apply(rect: Rect, target: Rect) -> Rect {
+        if rect == target || target == Rect.zero {
             return rect
         }
         
-        var scales = NSSize.zero
+        var scales = Size.zero
         scales.width = abs(target.width / rect.width)
         scales.height = abs(target.height / rect.height)
         

@@ -10,9 +10,6 @@
 //
 
 
-
-import Cocoa
-
 public struct TouchBarAccountButtons  {
 
 }

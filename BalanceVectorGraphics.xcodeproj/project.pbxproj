@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5309B7BB1F86DE5900560663 /* InstitutionLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */; };
 		5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */; };
 		53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
+		53669D8B1F91597E007307BD /* ExchangeLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53669D8A1F91597A007307BD /* ExchangeLogos.swift */; };
+		53669D911F915A9B007307BD /* InstitutionLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53669D881F9158F4007307BD /* InstitutionLogos.swift */; };
+		53669D921F915A9C007307BD /* InstitutionLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53669D881F9158F4007307BD /* InstitutionLogos.swift */; };
+		53669D951F915B2B007307BD /* InstitutionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53669D941F915B25007307BD /* InstitutionButtons.swift */; };
 		53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783271DFA2AE30032C6AA /* AppDelegate.swift */; };
 		53C7832A1DFA2AE30032C6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C783291DFA2AE30032C6AA /* Assets.xcassets */; };
 		53C7832D1DFA2AE30032C6AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C7832B1DFA2AE30032C6AA /* MainMenu.xib */; };
 		53C7834B1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */; };
 		53C7834C1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53CC29D11F9154BA00615A1F /* BalanceVectorGraphics_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 53CC29CF1F9154BA00615A1F /* BalanceVectorGraphics_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53CC29D51F9154C700615A1F /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
+		53CC29DD1F9154C700615A1F /* ResizingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */; };
 		53E67BD11F4CDCC100BE6449 /* AccountConnectionErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A1C1F4CD63C00FCA0FB /* AccountConnectionErrors.swift */; };
 		53E67BD31F4CDCC100BE6449 /* InstitutionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A1E1F4CD63C00FCA0FB /* InstitutionButtons.swift */; };
 		53E67BD61F4CDCC100BE6449 /* PreferencesAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A211F4CD63C00FCA0FB /* PreferencesAccounts.swift */; };
 		53E67BD71F4CDCC100BE6449 /* ResizingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */; };
 		53E67BD81F4CDCC100BE6449 /* TouchBarAccountButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */; };
 		53E67BD91F4CDCC100BE6449 /* TouchBarAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */; };
-		53E67BDC1F4CDCD600BE6449 /* NSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A291F4CD67B00FCA0FB /* NSFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +61,11 @@
 		53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingBehavior.swift; sourceTree = "<group>"; };
 		53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarAccountButtons.swift; sourceTree = "<group>"; };
 		53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarAccounts.swift; sourceTree = "<group>"; };
-		53012A291F4CD67B00FCA0FB /* NSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFont.swift; sourceTree = "<group>"; };
-		5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionLogos.swift; sourceTree = "<group>"; };
 		5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogos.swift; sourceTree = "<group>"; };
 		53560E611DFCAF3000547AF7 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		53669D881F9158F4007307BD /* InstitutionLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionLogos.swift; sourceTree = "<group>"; };
+		53669D8A1F91597A007307BD /* ExchangeLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogos.swift; sourceTree = "<group>"; };
+		53669D941F915B25007307BD /* InstitutionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionButtons.swift; sourceTree = "<group>"; };
 		53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVectorGraphics.h; sourceTree = "<group>"; };
 		53C7831A1DFA2AA60032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +74,9 @@
 		53C783291DFA2AE30032C6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C7832C1DFA2AE30032C6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		53C7832E1DFA2AE30032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53CC29CD1F9154BA00615A1F /* BalanceVectorGraphics_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CC29CF1F9154BA00615A1F /* BalanceVectorGraphics_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVectorGraphics_iOS.h; sourceTree = "<group>"; };
+		53CC29D01F9154BA00615A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C7834B1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CC29C91F9154BA00615A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */,
-				53012A291F4CD67B00FCA0FB /* NSFont.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -113,10 +128,25 @@
 		5309B7B91F86DE1600560663 /* InstitutionLogos */ = {
 			isa = PBXGroup;
 			children = (
-				5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */,
 				5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */,
 			);
 			path = InstitutionLogos;
+			sourceTree = "<group>";
+		};
+		53669D891F915957007307BD /* InstitutionLogos */ = {
+			isa = PBXGroup;
+			children = (
+				53669D8A1F91597A007307BD /* ExchangeLogos.swift */,
+			);
+			path = InstitutionLogos;
+			sourceTree = "<group>";
+		};
+		53669D931F915B12007307BD /* PaintCode */ = {
+			isa = PBXGroup;
+			children = (
+				53669D941F915B25007307BD /* InstitutionButtons.swift */,
+			);
+			path = PaintCode;
 			sourceTree = "<group>";
 		};
 		53C7830C1DFA2AA60032C6AA = {
@@ -124,6 +154,7 @@
 			children = (
 				53C783181DFA2AA60032C6AA /* BalanceVectorGraphics */,
 				53C783261DFA2AE30032C6AA /* BalanceVectorGraphicsTestApp */,
+				53CC29CE1F9154BA00615A1F /* BalanceVectorGraphics-iOS */,
 				53C783171DFA2AA60032C6AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,6 +164,7 @@
 			children = (
 				53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */,
 				53C783251DFA2AE30032C6AA /* BalanceVectorGraphicsTestApp.app */,
+				53CC29CD1F9154BA00615A1F /* BalanceVectorGraphics_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +172,9 @@
 		53C783181DFA2AA60032C6AA /* BalanceVectorGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				53560E611DFCAF3000547AF7 /* TypeAliases.swift */,
-				5309B7B91F86DE1600560663 /* InstitutionLogos */,
-				53012A1B1F4CD63C00FCA0FB /* PaintCode */,
-				53012A281F4CD67B00FCA0FB /* Internal */,
+				53CC29DE1F91562100615A1F /* Shared */,
+				53CC29DF1F91563600615A1F /* macOS */,
+				53CC29E01F91563E00615A1F /* iOS */,
 				53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */,
 				53C7831A1DFA2AA60032C6AA /* Info.plist */,
 			);
@@ -161,6 +192,51 @@
 			path = BalanceVectorGraphicsTestApp;
 			sourceTree = "<group>";
 		};
+		53CC29CE1F9154BA00615A1F /* BalanceVectorGraphics-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				53CC29CF1F9154BA00615A1F /* BalanceVectorGraphics_iOS.h */,
+				53CC29D01F9154BA00615A1F /* Info.plist */,
+			);
+			path = "BalanceVectorGraphics-iOS";
+			sourceTree = "<group>";
+		};
+		53CC29DE1F91562100615A1F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				53560E611DFCAF3000547AF7 /* TypeAliases.swift */,
+				53CC29E11F9158AE00615A1F /* InstitutionLogos */,
+				53012A281F4CD67B00FCA0FB /* Internal */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		53CC29DF1F91563600615A1F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				5309B7B91F86DE1600560663 /* InstitutionLogos */,
+				53012A1B1F4CD63C00FCA0FB /* PaintCode */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		53CC29E01F91563E00615A1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				53669D891F915957007307BD /* InstitutionLogos */,
+				53669D931F915B12007307BD /* PaintCode */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		53CC29E11F9158AE00615A1F /* InstitutionLogos */ = {
+			isa = PBXGroup;
+			children = (
+				53669D881F9158F4007307BD /* InstitutionLogos.swift */,
+			);
+			path = InstitutionLogos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -169,6 +245,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CC29CA1F9154BA00615A1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CC29D11F9154BA00615A1F /* BalanceVectorGraphics_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +296,24 @@
 			productReference = 53C783251DFA2AE30032C6AA /* BalanceVectorGraphicsTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		53CC29CC1F9154BA00615A1F /* BalanceVectorGraphics-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53CC29D41F9154BA00615A1F /* Build configuration list for PBXNativeTarget "BalanceVectorGraphics-iOS" */;
+			buildPhases = (
+				53CC29C81F9154BA00615A1F /* Sources */,
+				53CC29C91F9154BA00615A1F /* Frameworks */,
+				53CC29CA1F9154BA00615A1F /* Headers */,
+				53CC29CB1F9154BA00615A1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BalanceVectorGraphics-iOS";
+			productName = "BalanceVectorGraphics-iOS";
+			productReference = 53CC29CD1F9154BA00615A1F /* BalanceVectorGraphics_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,6 +335,11 @@
 						DevelopmentTeam = Q4G66XSS36;
 						ProvisioningStyle = Automatic;
 					};
+					53CC29CC1F9154BA00615A1F = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = Q4G66XSS36;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 53C783101DFA2AA60032C6AA /* Build configuration list for PBXProject "BalanceVectorGraphics" */;
@@ -250,6 +357,7 @@
 			targets = (
 				53C783151DFA2AA60032C6AA /* BalanceVectorGraphics */,
 				53C783241DFA2AE30032C6AA /* BalanceVectorGraphicsTestApp */,
+				53CC29CC1F9154BA00615A1F /* BalanceVectorGraphics-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -271,6 +379,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53CC29CB1F9154BA00615A1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -279,12 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E67BD81F4CDCC100BE6449 /* TouchBarAccountButtons.swift in Sources */,
-				5309B7BB1F86DE5900560663 /* InstitutionLogos.swift in Sources */,
 				53E67BD11F4CDCC100BE6449 /* AccountConnectionErrors.swift in Sources */,
 				53E67BD61F4CDCC100BE6449 /* PreferencesAccounts.swift in Sources */,
 				53E67BD91F4CDCC100BE6449 /* TouchBarAccounts.swift in Sources */,
 				53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */,
-				53E67BDC1F4CDCD600BE6449 /* NSFont.swift in Sources */,
+				53669D921F915A9C007307BD /* InstitutionLogos.swift in Sources */,
 				53E67BD71F4CDCC100BE6449 /* ResizingBehavior.swift in Sources */,
 				5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */,
 				53E67BD31F4CDCC100BE6449 /* InstitutionButtons.swift in Sources */,
@@ -296,6 +410,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CC29C81F9154BA00615A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CC29D51F9154C700615A1F /* TypeAliases.swift in Sources */,
+				53CC29DD1F9154C700615A1F /* ResizingBehavior.swift in Sources */,
+				53669D8B1F91597E007307BD /* ExchangeLogos.swift in Sources */,
+				53669D911F915A9B007307BD /* InstitutionLogos.swift in Sources */,
+				53669D951F915B2B007307BD /* InstitutionButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +632,61 @@
 			};
 			name = Release;
 		};
+		53CC29D21F9154BA00615A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q4G66XSS36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "BalanceVectorGraphics-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "software.balanced.BalanceVectorGraphics-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53CC29D31F9154BA00615A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q4G66XSS36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "BalanceVectorGraphics-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "software.balanced.BalanceVectorGraphics-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -532,6 +713,15 @@
 			buildConfigurations = (
 				53C783301DFA2AE30032C6AA /* Debug */,
 				53C783311DFA2AE30032C6AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53CC29D41F9154BA00615A1F /* Build configuration list for PBXNativeTarget "BalanceVectorGraphics-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53CC29D21F9154BA00615A1F /* Debug */,
+				53CC29D31F9154BA00615A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
