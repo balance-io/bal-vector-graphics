@@ -7,33 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		530FBFBD1E5E91B800A413BB /* PreferencesAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FBFBC1E5E91B800A413BB /* PreferencesAccounts.swift */; };
-		530FBFBF1E5E91D900A413BB /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530FBFBE1E5E91D900A413BB /* IntroScreen.swift */; };
-		53560E5A1DFCAB3600547AF7 /* TouchBarAccountButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */; };
-		53560E5C1DFCAB5B00547AF7 /* TouchBarAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */; };
+		5309B7BB1F86DE5900560663 /* InstitutionLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */; };
+		5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */; };
 		53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
-		53560E811DFCE0F600547AF7 /* ResizingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E801DFCE0F600547AF7 /* ResizingBehavior.swift */; };
-		536F8B761E01079400A3B718 /* AccountsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B721E01079400A3B718 /* AccountsTabIcon.swift */; };
-		536F8B771E01079400A3B718 /* FeedTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B731E01079400A3B718 /* FeedTabIcon.swift */; };
-		536F8B781E01079400A3B718 /* InsightsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B741E01079400A3B718 /* InsightsTabIcon.swift */; };
-		536F8B791E01079400A3B718 /* TransactionsTabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */; };
-		536F8B7B1E0107A500A3B718 /* SyncCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B7A1E0107A500A3B718 /* SyncCircle.swift */; };
-		536F8B7D1E01088100A3B718 /* TabIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F8B7C1E01088100A3B718 /* TabIcon.swift */; };
-		537964731E39810600E773BF /* SyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537964721E39810600E773BF /* SyncButton.swift */; };
 		53C7831B1DFA2AA60032C6AA /* BalanceVectorGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783271DFA2AE30032C6AA /* AppDelegate.swift */; };
 		53C7832A1DFA2AE30032C6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C783291DFA2AE30032C6AA /* Assets.xcassets */; };
 		53C7832D1DFA2AE30032C6AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C7832B1DFA2AE30032C6AA /* MainMenu.xib */; };
-		53C7833C1DFA2BCE0032C6AA /* InstitutionDefaultBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783391DFA2BCE0032C6AA /* InstitutionDefaultBar.swift */; };
-		53C7833D1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7833A1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift */; };
-		53C7833E1DFA2BCE0032C6AA /* InstitutionHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7833B1DFA2BCE0032C6AA /* InstitutionHeaders.swift */; };
-		53C783441DFA2BDA0032C6AA /* AccountConnectionErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7833F1DFA2BDA0032C6AA /* AccountConnectionErrors.swift */; };
-		53C783451DFA2BDA0032C6AA /* BillingButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783401DFA2BDA0032C6AA /* BillingButtons.swift */; };
-		53C783461DFA2BDA0032C6AA /* InstitutionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783411DFA2BDA0032C6AA /* InstitutionButtons.swift */; };
-		53C783471DFA2BDA0032C6AA /* NSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783421DFA2BDA0032C6AA /* NSFont.swift */; };
-		53C783481DFA2BDA0032C6AA /* QCMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C783431DFA2BDA0032C6AA /* QCMethod.swift */; };
 		53C7834B1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */; };
 		53C7834C1DFA2C2E0032C6AA /* BalanceVectorGraphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		53E67BD11F4CDCC100BE6449 /* AccountConnectionErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A1C1F4CD63C00FCA0FB /* AccountConnectionErrors.swift */; };
+		53E67BD31F4CDCC100BE6449 /* InstitutionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A1E1F4CD63C00FCA0FB /* InstitutionButtons.swift */; };
+		53E67BD61F4CDCC100BE6449 /* PreferencesAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A211F4CD63C00FCA0FB /* PreferencesAccounts.swift */; };
+		53E67BD71F4CDCC100BE6449 /* ResizingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */; };
+		53E67BD81F4CDCC100BE6449 /* TouchBarAccountButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */; };
+		53E67BD91F4CDCC100BE6449 /* TouchBarAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */; };
+		53E67BDC1F4CDCD600BE6449 /* NSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53012A291F4CD67B00FCA0FB /* NSFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,19 +50,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		530FBFBC1E5E91B800A413BB /* PreferencesAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesAccounts.swift; sourceTree = "<group>"; };
-		530FBFBE1E5E91D900A413BB /* IntroScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
-		53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarAccountButtons.swift; sourceTree = "<group>"; };
-		53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchBarAccounts.swift; sourceTree = "<group>"; };
+		53012A1C1F4CD63C00FCA0FB /* AccountConnectionErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConnectionErrors.swift; sourceTree = "<group>"; };
+		53012A1E1F4CD63C00FCA0FB /* InstitutionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionButtons.swift; sourceTree = "<group>"; };
+		53012A211F4CD63C00FCA0FB /* PreferencesAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesAccounts.swift; sourceTree = "<group>"; };
+		53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingBehavior.swift; sourceTree = "<group>"; };
+		53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarAccountButtons.swift; sourceTree = "<group>"; };
+		53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarAccounts.swift; sourceTree = "<group>"; };
+		53012A291F4CD67B00FCA0FB /* NSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFont.swift; sourceTree = "<group>"; };
+		5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionLogos.swift; sourceTree = "<group>"; };
+		5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogos.swift; sourceTree = "<group>"; };
 		53560E611DFCAF3000547AF7 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
-		53560E801DFCE0F600547AF7 /* ResizingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizingBehavior.swift; sourceTree = "<group>"; };
-		536F8B721E01079400A3B718 /* AccountsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsTabIcon.swift; sourceTree = "<group>"; };
-		536F8B731E01079400A3B718 /* FeedTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTabIcon.swift; sourceTree = "<group>"; };
-		536F8B741E01079400A3B718 /* InsightsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsTabIcon.swift; sourceTree = "<group>"; };
-		536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTabIcon.swift; sourceTree = "<group>"; };
-		536F8B7A1E0107A500A3B718 /* SyncCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncCircle.swift; sourceTree = "<group>"; };
-		536F8B7C1E01088100A3B718 /* TabIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabIcon.swift; sourceTree = "<group>"; };
-		537964721E39810600E773BF /* SyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncButton.swift; sourceTree = "<group>"; };
 		53C783161DFA2AA60032C6AA /* BalanceVectorGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BalanceVectorGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceVectorGraphics.h; sourceTree = "<group>"; };
 		53C7831A1DFA2AA60032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,14 +68,6 @@
 		53C783291DFA2AE30032C6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C7832C1DFA2AE30032C6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		53C7832E1DFA2AE30032C6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53C783391DFA2BCE0032C6AA /* InstitutionDefaultBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstitutionDefaultBar.swift; path = BalanceVectorGraphics/InstitutionDefaultBar.swift; sourceTree = SOURCE_ROOT; };
-		53C7833A1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstitutionHeaderBars.swift; path = BalanceVectorGraphics/InstitutionHeaderBars.swift; sourceTree = SOURCE_ROOT; };
-		53C7833B1DFA2BCE0032C6AA /* InstitutionHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstitutionHeaders.swift; path = BalanceVectorGraphics/InstitutionHeaders.swift; sourceTree = SOURCE_ROOT; };
-		53C7833F1DFA2BDA0032C6AA /* AccountConnectionErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountConnectionErrors.swift; sourceTree = "<group>"; };
-		53C783401DFA2BDA0032C6AA /* BillingButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingButtons.swift; sourceTree = "<group>"; };
-		53C783411DFA2BDA0032C6AA /* InstitutionButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstitutionButtons.swift; sourceTree = "<group>"; };
-		53C783421DFA2BDA0032C6AA /* NSFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFont.swift; sourceTree = "<group>"; };
-		53C783431DFA2BDA0032C6AA /* QCMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,24 +89,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53560E821DFCE11000547AF7 /* Internal */ = {
+		53012A1B1F4CD63C00FCA0FB /* PaintCode */ = {
 			isa = PBXGroup;
 			children = (
-				53C783421DFA2BDA0032C6AA /* NSFont.swift */,
+				53012A1C1F4CD63C00FCA0FB /* AccountConnectionErrors.swift */,
+				53012A1E1F4CD63C00FCA0FB /* InstitutionButtons.swift */,
+				53012A211F4CD63C00FCA0FB /* PreferencesAccounts.swift */,
+				53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */,
+				53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */,
 			);
-			name = Internal;
+			path = PaintCode;
 			sourceTree = "<group>";
 		};
-		536F8B711E01078900A3B718 /* Tab Icons */ = {
+		53012A281F4CD67B00FCA0FB /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				536F8B7C1E01088100A3B718 /* TabIcon.swift */,
-				536F8B721E01079400A3B718 /* AccountsTabIcon.swift */,
-				536F8B731E01079400A3B718 /* FeedTabIcon.swift */,
-				536F8B741E01079400A3B718 /* InsightsTabIcon.swift */,
-				536F8B751E01079400A3B718 /* TransactionsTabIcon.swift */,
+				53012A221F4CD63C00FCA0FB /* ResizingBehavior.swift */,
+				53012A291F4CD67B00FCA0FB /* NSFont.swift */,
 			);
-			name = "Tab Icons";
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		5309B7B91F86DE1600560663 /* InstitutionLogos */ = {
+			isa = PBXGroup;
+			children = (
+				5309B7BA1F86DE5900560663 /* InstitutionLogos.swift */,
+				5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */,
+			);
+			path = InstitutionLogos;
 			sourceTree = "<group>";
 		};
 		53C7830C1DFA2AA60032C6AA = {
@@ -153,11 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				53560E611DFCAF3000547AF7 /* TypeAliases.swift */,
-				536F8B711E01078900A3B718 /* Tab Icons */,
-				53C783321DFA2B400032C6AA /* InstitutionHeaders */,
-				53C783491DFA2BE30032C6AA /* PaintCode */,
-				53C7834A1DFA2BF40032C6AA /* QuartzCode */,
-				53560E821DFCE11000547AF7 /* Internal */,
+				5309B7B91F86DE1600560663 /* InstitutionLogos */,
+				53012A1B1F4CD63C00FCA0FB /* PaintCode */,
+				53012A281F4CD67B00FCA0FB /* Internal */,
 				53C783191DFA2AA60032C6AA /* BalanceVectorGraphics.h */,
 				53C7831A1DFA2AA60032C6AA /* Info.plist */,
 			);
@@ -168,46 +154,11 @@
 			isa = PBXGroup;
 			children = (
 				53C783271DFA2AE30032C6AA /* AppDelegate.swift */,
-				537964721E39810600E773BF /* SyncButton.swift */,
 				53C783291DFA2AE30032C6AA /* Assets.xcassets */,
 				53C7832B1DFA2AE30032C6AA /* MainMenu.xib */,
 				53C7832E1DFA2AE30032C6AA /* Info.plist */,
 			);
 			path = BalanceVectorGraphicsTestApp;
-			sourceTree = "<group>";
-		};
-		53C783321DFA2B400032C6AA /* InstitutionHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				53C783391DFA2BCE0032C6AA /* InstitutionDefaultBar.swift */,
-				53C7833A1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift */,
-				53C7833B1DFA2BCE0032C6AA /* InstitutionHeaders.swift */,
-			);
-			path = InstitutionHeaders;
-			sourceTree = "<group>";
-		};
-		53C783491DFA2BE30032C6AA /* PaintCode */ = {
-			isa = PBXGroup;
-			children = (
-				53C7833F1DFA2BDA0032C6AA /* AccountConnectionErrors.swift */,
-				53C783401DFA2BDA0032C6AA /* BillingButtons.swift */,
-				53C783411DFA2BDA0032C6AA /* InstitutionButtons.swift */,
-				53560E5B1DFCAB5B00547AF7 /* TouchBarAccounts.swift */,
-				53560E591DFCAB3600547AF7 /* TouchBarAccountButtons.swift */,
-				53560E801DFCE0F600547AF7 /* ResizingBehavior.swift */,
-				530FBFBC1E5E91B800A413BB /* PreferencesAccounts.swift */,
-				530FBFBE1E5E91D900A413BB /* IntroScreen.swift */,
-			);
-			name = PaintCode;
-			sourceTree = "<group>";
-		};
-		53C7834A1DFA2BF40032C6AA /* QuartzCode */ = {
-			isa = PBXGroup;
-			children = (
-				536F8B7A1E0107A500A3B718 /* SyncCircle.swift */,
-				53C783431DFA2BDA0032C6AA /* QCMethod.swift */,
-			);
-			name = QuartzCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +219,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Balanced Software";
 				TargetAttributes = {
 					53C783151DFA2AA60032C6AA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Q4G66XSS36;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					53C783241DFA2AE30032C6AA = {
@@ -327,26 +278,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				530FBFBF1E5E91D900A413BB /* IntroScreen.swift in Sources */,
-				53C783471DFA2BDA0032C6AA /* NSFont.swift in Sources */,
-				53560E5A1DFCAB3600547AF7 /* TouchBarAccountButtons.swift in Sources */,
-				536F8B761E01079400A3B718 /* AccountsTabIcon.swift in Sources */,
-				536F8B7D1E01088100A3B718 /* TabIcon.swift in Sources */,
-				536F8B771E01079400A3B718 /* FeedTabIcon.swift in Sources */,
+				53E67BD81F4CDCC100BE6449 /* TouchBarAccountButtons.swift in Sources */,
+				5309B7BB1F86DE5900560663 /* InstitutionLogos.swift in Sources */,
+				53E67BD11F4CDCC100BE6449 /* AccountConnectionErrors.swift in Sources */,
+				53E67BD61F4CDCC100BE6449 /* PreferencesAccounts.swift in Sources */,
+				53E67BD91F4CDCC100BE6449 /* TouchBarAccounts.swift in Sources */,
 				53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */,
-				536F8B791E01079400A3B718 /* TransactionsTabIcon.swift in Sources */,
-				53C7833C1DFA2BCE0032C6AA /* InstitutionDefaultBar.swift in Sources */,
-				53560E811DFCE0F600547AF7 /* ResizingBehavior.swift in Sources */,
-				53C7833E1DFA2BCE0032C6AA /* InstitutionHeaders.swift in Sources */,
-				53C783461DFA2BDA0032C6AA /* InstitutionButtons.swift in Sources */,
-				536F8B781E01079400A3B718 /* InsightsTabIcon.swift in Sources */,
-				53C783441DFA2BDA0032C6AA /* AccountConnectionErrors.swift in Sources */,
-				536F8B7B1E0107A500A3B718 /* SyncCircle.swift in Sources */,
-				53C783451DFA2BDA0032C6AA /* BillingButtons.swift in Sources */,
-				53C783481DFA2BDA0032C6AA /* QCMethod.swift in Sources */,
-				53C7833D1DFA2BCE0032C6AA /* InstitutionHeaderBars.swift in Sources */,
-				530FBFBD1E5E91B800A413BB /* PreferencesAccounts.swift in Sources */,
-				53560E5C1DFCAB5B00547AF7 /* TouchBarAccounts.swift in Sources */,
+				53E67BDC1F4CDCD600BE6449 /* NSFont.swift in Sources */,
+				53E67BD71F4CDCC100BE6449 /* ResizingBehavior.swift in Sources */,
+				5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */,
+				53E67BD31F4CDCC100BE6449 /* InstitutionButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537964731E39810600E773BF /* SyncButton.swift in Sources */,
 				53C783281DFA2AE30032C6AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +330,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -398,7 +340,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -429,6 +375,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -443,7 +390,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -451,7 +400,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -474,6 +427,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -498,7 +452,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -520,7 +473,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = software.balanced.BalanceVectorGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -536,7 +488,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = software.balanced.BalanceVectorGraphicsTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -552,7 +503,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = software.balanced.BalanceVectorGraphicsTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
