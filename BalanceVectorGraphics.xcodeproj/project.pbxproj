@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */; };
+		53178C591FCF792F003E1707 /* TabButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53178C581FCF792F003E1707 /* TabButtons.swift */; };
 		53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53560E611DFCAF3000547AF7 /* TypeAliases.swift */; };
 		53669D8B1F91597E007307BD /* ExchangeLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53669D8A1F91597A007307BD /* ExchangeLogos.swift */; };
 		53669D911F915A9B007307BD /* InstitutionLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53669D881F9158F4007307BD /* InstitutionLogos.swift */; };
@@ -62,6 +63,7 @@
 		53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarAccountButtons.swift; sourceTree = "<group>"; };
 		53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarAccounts.swift; sourceTree = "<group>"; };
 		5309B7BE1F86DF9A00560663 /* ExchangeLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogos.swift; sourceTree = "<group>"; };
+		53178C581FCF792F003E1707 /* TabButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtons.swift; sourceTree = "<group>"; };
 		53560E611DFCAF3000547AF7 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		53669D881F9158F4007307BD /* InstitutionLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionLogos.swift; sourceTree = "<group>"; };
 		53669D8A1F91597A007307BD /* ExchangeLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogos.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				53012A1C1F4CD63C00FCA0FB /* AccountConnectionErrors.swift */,
 				53012A1E1F4CD63C00FCA0FB /* InstitutionButtons.swift */,
 				53012A211F4CD63C00FCA0FB /* PreferencesAccounts.swift */,
+				53178C581FCF792F003E1707 /* TabButtons.swift */,
 				53012A231F4CD63C00FCA0FB /* TouchBarAccountButtons.swift */,
 				53012A241F4CD63C00FCA0FB /* TouchBarAccounts.swift */,
 			);
@@ -392,6 +395,7 @@
 				53560E621DFCAF3000547AF7 /* TypeAliases.swift in Sources */,
 				53669D921F915A9C007307BD /* InstitutionLogos.swift in Sources */,
 				53E67BD71F4CDCC100BE6449 /* ResizingBehavior.swift in Sources */,
+				53178C591FCF792F003E1707 /* TabButtons.swift in Sources */,
 				5309B7BF1F86DF9A00560663 /* ExchangeLogos.swift in Sources */,
 				53E67BD31F4CDCC100BE6449 /* InstitutionButtons.swift in Sources */,
 			);
@@ -566,6 +570,7 @@
 				INFOPLIST_FILE = BalanceVectorGraphics/macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = software.balanced.BalanceVectorGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -588,6 +593,7 @@
 				INFOPLIST_FILE = BalanceVectorGraphics/macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = software.balanced.BalanceVectorGraphics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
