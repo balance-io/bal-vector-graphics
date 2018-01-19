@@ -1624,6 +1624,339 @@ public struct InstitutionButtons {
         kraken2Path.fill()
     }
     
+    public static func drawBittrexButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
+        //// General Declarations
+        let context = NSGraphicsContext.current!.cgContext
+        
+        //// Color Declarations
+        let highlightGradientColor = NSColor(red: 1, green: 1, blue: 1, alpha: 0.09)
+        let highlightGradientColor2 = NSColor(red: 1, green: 1, blue: 1, alpha: 0)
+        let shadow2Color = NSColor(red: 1, green: 1, blue: 1, alpha: 0.36)
+        let logoWhite = NSColor(red: 1, green: 1, blue: 1, alpha: 1)
+        let bittrexLogoBackground = NSColor(red: 0.086, green: 0.565, blue: 0.878, alpha: 1)
+        let bittrexBackground = NSColor(red: 0.133, green: 0.169, blue: 0.2, alpha: 1)
+        
+        //// Gradient Declarations
+        let highlightGradient = NSGradient(starting: highlightGradientColor, ending: highlightGradientColor2)!
+        
+        //// Shadow Declarations
+        let outerShadow = NSShadow()
+        outerShadow.shadowColor = NSColor.black
+        outerShadow.shadowOffset = NSSize(width: 0, height: 0)
+        outerShadow.shadowBlurRadius = 0.5
+        let innerStroke = NSShadow()
+        innerStroke.shadowColor = shadow2Color
+        innerStroke.shadowOffset = NSSize(width: 0, height: 0)
+        innerStroke.shadowBlurRadius = 0.5
+        
+        if (original) {
+            //// bittrex
+            NSGraphicsContext.saveGraphicsState()
+            context.translateBy(x: bounds.minX + 95.5, y: bounds.maxY - 28)
+            
+            outerShadow.set()
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            
+            
+            //// bittrexBase Drawing
+            let bittrexBasePath = NSBezierPath(roundedRect: NSRect(x: -88.5, y: -21, width: 177, height: 42), xRadius: 5, yRadius: 5)
+            bittrexBackground.setFill()
+            bittrexBasePath.fill()
+            
+            
+            //// bittrexHighlight Drawing
+            let bittrexHighlightPath = NSBezierPath(roundedRect: NSRect(x: -88.5, y: -21, width: 177, height: 42), xRadius: 5, yRadius: 5)
+            highlightGradient.draw(in: bittrexHighlightPath, angle: -45)
+            
+            ////// bittrexHighlight Inner Shadow
+            NSGraphicsContext.saveGraphicsState()
+            bittrexHighlightPath.bounds.clip()
+            context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
+            
+            context.setAlpha(innerStroke.shadowColor!.alphaComponent)
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            let bittrexHighlightOpaqueShadow = NSShadow()
+            bittrexHighlightOpaqueShadow.shadowColor = innerStroke.shadowColor!.withAlphaComponent(1)
+            bittrexHighlightOpaqueShadow.shadowOffset = innerStroke.shadowOffset
+            bittrexHighlightOpaqueShadow.shadowBlurRadius = innerStroke.shadowBlurRadius
+            bittrexHighlightOpaqueShadow.set()
+            
+            context.setBlendMode(.sourceOut)
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            
+            bittrexHighlightOpaqueShadow.shadowColor!.setFill()
+            bittrexHighlightPath.fill()
+            
+            context.endTransparencyLayer()
+            context.endTransparencyLayer()
+            NSGraphicsContext.restoreGraphicsState()
+            
+            
+            
+            context.endTransparencyLayer()
+            
+            NSGraphicsContext.restoreGraphicsState()
+        }
+        
+        
+        if (hover) {
+            //// krakenHover
+            NSGraphicsContext.saveGraphicsState()
+            context.translateBy(x: bounds.minX + 95.5, y: bounds.maxY - 28)
+            context.scaleBy(x: 1.05, y: 1.05)
+            
+            outerShadow.set()
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            
+            
+            //// bittrexBase 2 Drawing
+            let bittrexBase2Path = NSBezierPath(roundedRect: NSRect(x: -88.5, y: -21, width: 177, height: 42), xRadius: 5, yRadius: 5)
+            bittrexBackground.setFill()
+            bittrexBase2Path.fill()
+            
+            
+            //// bittrexHighlight 2 Drawing
+            let bittrexHighlight2Path = NSBezierPath(roundedRect: NSRect(x: -88.5, y: -21, width: 177, height: 42), xRadius: 5, yRadius: 5)
+            highlightGradient.draw(in: bittrexHighlight2Path, angle: -45)
+            
+            ////// bittrexHighlight 2 Inner Shadow
+            NSGraphicsContext.saveGraphicsState()
+            bittrexHighlight2Path.bounds.clip()
+            context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
+            
+            context.setAlpha(innerStroke.shadowColor!.alphaComponent)
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            let bittrexHighlight2OpaqueShadow = NSShadow()
+            bittrexHighlight2OpaqueShadow.shadowColor = innerStroke.shadowColor!.withAlphaComponent(1)
+            bittrexHighlight2OpaqueShadow.shadowOffset = innerStroke.shadowOffset
+            bittrexHighlight2OpaqueShadow.shadowBlurRadius = innerStroke.shadowBlurRadius
+            bittrexHighlight2OpaqueShadow.set()
+            
+            context.setBlendMode(.sourceOut)
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            
+            bittrexHighlight2OpaqueShadow.shadowColor!.setFill()
+            bittrexHighlight2Path.fill()
+            
+            context.endTransparencyLayer()
+            context.endTransparencyLayer()
+            NSGraphicsContext.restoreGraphicsState()
+            
+            
+            
+            context.endTransparencyLayer()
+            
+            NSGraphicsContext.restoreGraphicsState()
+        }
+        
+        
+        if (pressed) {
+            //// bittrexPressed
+            NSGraphicsContext.saveGraphicsState()
+            context.translateBy(x: bounds.minX + 95.5, y: bounds.maxY - 28)
+            
+            outerShadow.set()
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            
+            
+            //// bittrexBase 3 Drawing
+            let bittrexBase3Path = NSBezierPath(roundedRect: NSRect(x: -88.5, y: -21, width: 177, height: 42), xRadius: 5, yRadius: 5)
+            bittrexBackground.setFill()
+            bittrexBase3Path.fill()
+            
+            
+            //// bittrexHighlight 3 Drawing
+            let bittrexHighlight3Path = NSBezierPath(roundedRect: NSRect(x: -88.5, y: -21, width: 177, height: 42), xRadius: 5, yRadius: 5)
+            highlightGradient.draw(in: bittrexHighlight3Path, angle: -45)
+            
+            ////// bittrexHighlight 3 Inner Shadow
+            NSGraphicsContext.saveGraphicsState()
+            bittrexHighlight3Path.bounds.clip()
+            context.setShadow(offset: NSSize.zero, blur: 0, color: nil)
+            
+            context.setAlpha(innerStroke.shadowColor!.alphaComponent)
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            let bittrexHighlight3OpaqueShadow = NSShadow()
+            bittrexHighlight3OpaqueShadow.shadowColor = innerStroke.shadowColor!.withAlphaComponent(1)
+            bittrexHighlight3OpaqueShadow.shadowOffset = innerStroke.shadowOffset
+            bittrexHighlight3OpaqueShadow.shadowBlurRadius = innerStroke.shadowBlurRadius
+            bittrexHighlight3OpaqueShadow.set()
+            
+            context.setBlendMode(.sourceOut)
+            context.beginTransparencyLayer(auxiliaryInfo: nil)
+            
+            bittrexHighlight3OpaqueShadow.shadowColor!.setFill()
+            bittrexHighlight3Path.fill()
+            
+            context.endTransparencyLayer()
+            context.endTransparencyLayer()
+            NSGraphicsContext.restoreGraphicsState()
+            
+            
+            
+            context.endTransparencyLayer()
+            
+            NSGraphicsContext.restoreGraphicsState()
+        }
+        
+        
+        //// bittrexLogo
+        //// Shape Drawing
+        let shapePath = NSBezierPath()
+        shapePath.move(to: NSPoint(x: bounds.minX + 47.62, y: bounds.maxY - 17.57))
+        shapePath.line(to: NSPoint(x: bounds.minX + 63.49, y: bounds.maxY - 17.57))
+        shapePath.line(to: NSPoint(x: bounds.minX + 63.49, y: bounds.maxY - 33.45))
+        shapePath.line(to: NSPoint(x: bounds.minX + 47.62, y: bounds.maxY - 33.45))
+        shapePath.line(to: NSPoint(x: bounds.minX + 47.62, y: bounds.maxY - 25.06))
+        shapePath.line(to: NSPoint(x: bounds.minX + 49.6, y: bounds.maxY - 25.06))
+        shapePath.line(to: NSPoint(x: bounds.minX + 49.6, y: bounds.maxY - 31.46))
+        shapePath.line(to: NSPoint(x: bounds.minX + 61.51, y: bounds.maxY - 31.46))
+        shapePath.line(to: NSPoint(x: bounds.minX + 61.51, y: bounds.maxY - 19.55))
+        shapePath.line(to: NSPoint(x: bounds.minX + 49.6, y: bounds.maxY - 19.55))
+        shapePath.line(to: NSPoint(x: bounds.minX + 49.6, y: bounds.maxY - 20.73))
+        shapePath.line(to: NSPoint(x: bounds.minX + 47.62, y: bounds.maxY - 20.73))
+        shapePath.line(to: NSPoint(x: bounds.minX + 47.62, y: bounds.maxY - 17.57))
+        shapePath.close()
+        shapePath.move(to: NSPoint(x: bounds.minX + 43.5, y: bounds.maxY - 22.03))
+        shapePath.line(to: NSPoint(x: bounds.minX + 59.37, y: bounds.maxY - 22.03))
+        shapePath.line(to: NSPoint(x: bounds.minX + 59.37, y: bounds.maxY - 30.29))
+        shapePath.line(to: NSPoint(x: bounds.minX + 57.39, y: bounds.maxY - 30.29))
+        shapePath.line(to: NSPoint(x: bounds.minX + 57.39, y: bounds.maxY - 24.02))
+        shapePath.line(to: NSPoint(x: bounds.minX + 45.48, y: bounds.maxY - 24.02))
+        shapePath.line(to: NSPoint(x: bounds.minX + 45.48, y: bounds.maxY - 35.93))
+        shapePath.line(to: NSPoint(x: bounds.minX + 57.39, y: bounds.maxY - 35.93))
+        shapePath.line(to: NSPoint(x: bounds.minX + 57.39, y: bounds.maxY - 34.62))
+        shapePath.line(to: NSPoint(x: bounds.minX + 59.37, y: bounds.maxY - 34.62))
+        shapePath.line(to: NSPoint(x: bounds.minX + 59.37, y: bounds.maxY - 37.91))
+        shapePath.line(to: NSPoint(x: bounds.minX + 43.5, y: bounds.maxY - 37.91))
+        shapePath.line(to: NSPoint(x: bounds.minX + 43.5, y: bounds.maxY - 22.03))
+        shapePath.close()
+        bittrexLogoBackground.setFill()
+        shapePath.fill()
+        
+        
+        //// BITTREX-Copy-2 Drawing
+        let bITTREXCopy2Path = NSBezierPath()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 71.2, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 71.2, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 77.33, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 79.85, y: bounds.maxY - 21.91), controlPoint1: NSPoint(x: bounds.minX + 78.65, y: bounds.maxY - 21.52), controlPoint2: NSPoint(x: bounds.minX + 79.32, y: bounds.maxY - 21.63))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 81.04, y: bounds.maxY - 24.78), controlPoint1: NSPoint(x: bounds.minX + 80.67, y: bounds.maxY - 22.38), controlPoint2: NSPoint(x: bounds.minX + 81.04, y: bounds.maxY - 23.27))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 79.21, y: bounds.maxY - 27.52), controlPoint1: NSPoint(x: bounds.minX + 81.04, y: bounds.maxY - 26.5), controlPoint2: NSPoint(x: bounds.minX + 80.55, y: bounds.maxY - 27.23))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 79.21, y: bounds.maxY - 27.58))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 81.34, y: bounds.maxY - 30.54), controlPoint1: NSPoint(x: bounds.minX + 80.83, y: bounds.maxY - 27.84), controlPoint2: NSPoint(x: bounds.minX + 81.34, y: bounds.maxY - 28.55))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 77.66, y: bounds.maxY - 33.96), controlPoint1: NSPoint(x: bounds.minX + 81.34, y: bounds.maxY - 33.06), controlPoint2: NSPoint(x: bounds.minX + 80.39, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 71.2, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 73.58, y: bounds.maxY - 26.74))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 76.47, y: bounds.maxY - 26.74))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 78.13, y: bounds.maxY - 26.52), controlPoint1: NSPoint(x: bounds.minX + 77.48, y: bounds.maxY - 26.74), controlPoint2: NSPoint(x: bounds.minX + 77.83, y: bounds.maxY - 26.69))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 78.67, y: bounds.maxY - 25.03), controlPoint1: NSPoint(x: bounds.minX + 78.52, y: bounds.maxY - 26.29), controlPoint2: NSPoint(x: bounds.minX + 78.67, y: bounds.maxY - 25.88))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 78.11, y: bounds.maxY - 23.63), controlPoint1: NSPoint(x: bounds.minX + 78.67, y: bounds.maxY - 24.22), controlPoint2: NSPoint(x: bounds.minX + 78.5, y: bounds.maxY - 23.83))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 76.96, y: bounds.maxY - 23.5), controlPoint1: NSPoint(x: bounds.minX + 77.89, y: bounds.maxY - 23.54), controlPoint2: NSPoint(x: bounds.minX + 77.63, y: bounds.maxY - 23.5))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 73.58, y: bounds.maxY - 23.5))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 73.58, y: bounds.maxY - 26.74))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 73.58, y: bounds.maxY - 31.98))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 76.17, y: bounds.maxY - 31.98))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 78.97, y: bounds.maxY - 30.3), controlPoint1: NSPoint(x: bounds.minX + 78.65, y: bounds.maxY - 31.98), controlPoint2: NSPoint(x: bounds.minX + 78.97, y: bounds.maxY - 31.79))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 78.32, y: bounds.maxY - 28.66), controlPoint1: NSPoint(x: bounds.minX + 78.97, y: bounds.maxY - 29.31), controlPoint2: NSPoint(x: bounds.minX + 78.8, y: bounds.maxY - 28.89))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 76.6, y: bounds.maxY - 28.51), controlPoint1: NSPoint(x: bounds.minX + 78.04, y: bounds.maxY - 28.53), controlPoint2: NSPoint(x: bounds.minX + 77.74, y: bounds.maxY - 28.51))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 73.58, y: bounds.maxY - 28.51))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 73.58, y: bounds.maxY - 31.98))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 86.48, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 86.48, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 84.09, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 84.09, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 86.48, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 94.75, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 94.75, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 92.36, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 92.36, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 88.76, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 88.76, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 98.42, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 98.42, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 94.75, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 106.21, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 106.21, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 103.82, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 103.82, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 100.22, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 100.22, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 109.88, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 109.88, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 106.21, y: bounds.maxY - 23.61))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 112.19, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 112.19, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 118.3, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 122.33, y: bounds.maxY - 25.23), controlPoint1: NSPoint(x: bounds.minX + 121.3, y: bounds.maxY - 21.52), controlPoint2: NSPoint(x: bounds.minX + 122.33, y: bounds.maxY - 22.45))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 120.09, y: bounds.maxY - 28.74), controlPoint1: NSPoint(x: bounds.minX + 122.33, y: bounds.maxY - 27.71), controlPoint2: NSPoint(x: bounds.minX + 121.9, y: bounds.maxY - 28.38))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 120.09, y: bounds.maxY - 28.83))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 122.2, y: bounds.maxY - 31.25), controlPoint1: NSPoint(x: bounds.minX + 121.51, y: bounds.maxY - 28.9), controlPoint2: NSPoint(x: bounds.minX + 122.22, y: bounds.maxY - 29.74))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 122.2, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 119.79, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 119.79, y: bounds.maxY - 31.72))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 117.93, y: bounds.maxY - 29.82), controlPoint1: NSPoint(x: bounds.minX + 119.83, y: bounds.maxY - 30.36), controlPoint2: NSPoint(x: bounds.minX + 119.25, y: bounds.maxY - 29.78))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 114.57, y: bounds.maxY - 29.82))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 114.57, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 112.19, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 114.57, y: bounds.maxY - 27.79))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 117.91, y: bounds.maxY - 27.79))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 119.42, y: bounds.maxY - 27.41), controlPoint1: NSPoint(x: bounds.minX + 118.65, y: bounds.maxY - 27.79), controlPoint2: NSPoint(x: bounds.minX + 119.14, y: bounds.maxY - 27.67))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 119.9, y: bounds.maxY - 25.66), controlPoint1: NSPoint(x: bounds.minX + 119.81, y: bounds.maxY - 27.1), controlPoint2: NSPoint(x: bounds.minX + 119.9, y: bounds.maxY - 26.72))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 118.08, y: bounds.maxY - 23.57), controlPoint1: NSPoint(x: bounds.minX + 119.9, y: bounds.maxY - 23.91), controlPoint2: NSPoint(x: bounds.minX + 119.61, y: bounds.maxY - 23.57))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 114.57, y: bounds.maxY - 23.57))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 114.57, y: bounds.maxY - 27.79))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 127.48, y: bounds.maxY - 23.5))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 127.48, y: bounds.maxY - 26.72))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 133.28, y: bounds.maxY - 26.72))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 133.28, y: bounds.maxY - 28.48))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 127.48, y: bounds.maxY - 28.48))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 127.48, y: bounds.maxY - 31.98))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 133.66, y: bounds.maxY - 31.98))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 133.66, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 125.1, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 125.1, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 133.6, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 133.6, y: bounds.maxY - 23.5))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 127.48, y: bounds.maxY - 23.5))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.move(to: NSPoint(x: bounds.minX + 146.9, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 143.18, y: bounds.maxY - 27.54))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 147.15, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 144.39, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 142.6, y: bounds.maxY - 30.97))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 141.55, y: bounds.maxY - 29.07), controlPoint1: NSPoint(x: bounds.minX + 142.19, y: bounds.maxY - 30.27), controlPoint2: NSPoint(x: bounds.minX + 142.06, y: bounds.maxY - 30.02))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 141.29, y: bounds.maxY - 28.59))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 141.26, y: bounds.maxY - 28.59))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 140.85, y: bounds.maxY - 29.37))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 139.93, y: bounds.maxY - 30.97), controlPoint1: NSPoint(x: bounds.minX + 140.62, y: bounds.maxY - 29.78), controlPoint2: NSPoint(x: bounds.minX + 140.38, y: bounds.maxY - 30.23))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 138.12, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 135.29, y: bounds.maxY - 33.96))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 139.37, y: bounds.maxY - 27.54))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 135.59, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 138.38, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 140.06, y: bounds.maxY - 24.3))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 141.24, y: bounds.maxY - 26.46), controlPoint1: NSPoint(x: bounds.minX + 140.51, y: bounds.maxY - 25.06), controlPoint2: NSPoint(x: bounds.minX + 140.58, y: bounds.maxY - 25.19))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 141.27, y: bounds.maxY - 26.46))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 141.52, y: bounds.maxY - 26.01))
+        bITTREXCopy2Path.curve(to: NSPoint(x: bounds.minX + 142.47, y: bounds.maxY - 24.3), controlPoint1: NSPoint(x: bounds.minX + 141.93, y: bounds.maxY - 25.23), controlPoint2: NSPoint(x: bounds.minX + 142.06, y: bounds.maxY - 24.99))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 144.13, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.line(to: NSPoint(x: bounds.minX + 146.9, y: bounds.maxY - 21.52))
+        bITTREXCopy2Path.close()
+        bITTREXCopy2Path.windingRule = .evenOddWindingRule
+        logoWhite.setFill()
+        bITTREXCopy2Path.fill()
+    }
+
+    
     public static func drawAddWalletAddressButton(bounds: NSRect = NSRect(x: 0, y: 0, width: 191, height: 56), original: Bool = true, hover: Bool = false, pressed: Bool = false) {
         //// General Declarations
         let context = NSGraphicsContext.current!.cgContext
